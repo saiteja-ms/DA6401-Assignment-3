@@ -1,0 +1,16 @@
+{"time":"2025-05-19T18:31:54.2606206+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\SAI TEJA M S\\Documents\\Deep_Learning_Assignment_3\\wandb\\run-20250519_183154-cndia519\\logs\\debug-core.log"}
+{"time":"2025-05-19T18:31:54.9980473+05:30","level":"INFO","msg":"created new stream","id":"cndia519"}
+{"time":"2025-05-19T18:31:54.9992849+05:30","level":"INFO","msg":"stream: started","id":"cndia519"}
+{"time":"2025-05-19T18:31:54.9992849+05:30","level":"INFO","msg":"handler: started","stream_id":"cndia519"}
+{"time":"2025-05-19T18:31:54.9993505+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"cndia519"}
+{"time":"2025-05-19T18:31:54.9993505+05:30","level":"INFO","msg":"sender: started","stream_id":"cndia519"}
+{"time":"2025-05-19T18:31:55.5189181+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T18:31:57.7663526+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T18:31:57.7668573+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T18:31:58.7791339+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.4047204,"progress":"24B/24B"},{"desc":"uploading output.log","runtime_seconds":0.4047204,"progress":"1.9KB/1.9KB"}],"total_operations":2}}
+{"time":"2025-05-19T18:31:59.3004097+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T18:31:59.8238714+05:30","level":"INFO","msg":"stream: closing","id":"cndia519"}
+{"time":"2025-05-19T18:31:59.8238714+05:30","level":"INFO","msg":"handler: closed","stream_id":"cndia519"}
+{"time":"2025-05-19T18:31:59.8238714+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"cndia519"}
+{"time":"2025-05-19T18:31:59.8248744+05:30","level":"INFO","msg":"sender: closed","stream_id":"cndia519"}
+{"time":"2025-05-19T18:31:59.8284172+05:30","level":"INFO","msg":"stream: closed","id":"cndia519"}

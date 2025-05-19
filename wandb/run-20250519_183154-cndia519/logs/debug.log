@@ -1,0 +1,29 @@
+2025-05-19 18:31:54,181 INFO    MainThread:13712 [wandb_setup.py:_flush():70] Current SDK version is 0.19.11
+2025-05-19 18:31:54,185 INFO    MainThread:13712 [wandb_setup.py:_flush():70] Configure stats pid to 13712
+2025-05-19 18:31:54,185 INFO    MainThread:13712 [wandb_setup.py:_flush():70] Loading settings from C:\Users\SAI TEJA M S\.config\wandb\settings
+2025-05-19 18:31:54,185 INFO    MainThread:13712 [wandb_setup.py:_flush():70] Loading settings from C:\Users\SAI TEJA M S\Documents\Deep_Learning_Assignment_3\wandb\settings
+2025-05-19 18:31:54,186 INFO    MainThread:13712 [wandb_setup.py:_flush():70] Loading settings from environment variables
+2025-05-19 18:31:54,186 INFO    MainThread:13712 [wandb_init.py:setup_run_log_directory():724] Logging user logs to C:\Users\SAI TEJA M S\Documents\Deep_Learning_Assignment_3\wandb\run-20250519_183154-cndia519\logs\debug.log
+2025-05-19 18:31:54,186 INFO    MainThread:13712 [wandb_init.py:setup_run_log_directory():725] Logging internal logs to C:\Users\SAI TEJA M S\Documents\Deep_Learning_Assignment_3\wandb\run-20250519_183154-cndia519\logs\debug-internal.log
+2025-05-19 18:31:54,186 INFO    MainThread:13712 [wandb_init.py:init():852] calling init triggers
+2025-05-19 18:31:54,186 INFO    MainThread:13712 [wandb_init.py:init():857] wandb.init called with sweep_config: {}
+config: {'language': 'ta', 'embedding_size': 64, 'hidden_size': 128, 'encoder_layers': 1, 'decoder_layers': 1, 'cell_type': 'lstm', 'dropout': 0.2, 'learning_rate': 0.001, 'batch_size': 64, 'n_epochs': 20, 'clip': 1.0, 'teacher_forcing_ratio': 0.5, 'use_attention': False, 'data_dir': 'ta', '_wandb': {}}
+2025-05-19 18:31:54,186 INFO    MainThread:13712 [wandb_init.py:init():893] starting backend
+2025-05-19 18:31:54,186 INFO    MainThread:13712 [wandb_init.py:init():897] sending inform_init request
+2025-05-19 18:31:54,252 INFO    MainThread:13712 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-05-19 18:31:54,252 INFO    MainThread:13712 [wandb_init.py:init():907] backend started and connected
+2025-05-19 18:31:54,255 INFO    MainThread:13712 [wandb_init.py:init():1005] updated telemetry
+2025-05-19 18:31:54,255 INFO    MainThread:13712 [wandb_init.py:init():1029] communicating run to backend with 90.0 second timeout
+2025-05-19 18:31:55,512 INFO    MainThread:13712 [wandb_init.py:init():1104] starting run threads in backend
+2025-05-19 18:31:55,753 INFO    MainThread:13712 [wandb_run.py:_console_start():2573] atexit reg
+2025-05-19 18:31:55,753 INFO    MainThread:13712 [wandb_run.py:_redirect():2421] redirect: wrap_raw
+2025-05-19 18:31:55,754 INFO    MainThread:13712 [wandb_run.py:_redirect():2490] Wrapping output streams.
+2025-05-19 18:31:55,754 INFO    MainThread:13712 [wandb_run.py:_redirect():2513] Redirects installed.
+2025-05-19 18:31:55,756 INFO    MainThread:13712 [wandb_init.py:init():1150] run started, returning control to user process
+2025-05-19 18:31:57,763 INFO    MainThread:13712 [wandb_run.py:_finish():2321] finishing run teja_sai-indian-institute-of-technology-madras/transliteration-seq2seq/cndia519
+2025-05-19 18:31:57,764 INFO    MainThread:13712 [wandb_run.py:_atexit_cleanup():2538] got exitcode: 1
+2025-05-19 18:31:57,764 INFO    MainThread:13712 [wandb_run.py:_restore():2520] restore
+2025-05-19 18:31:57,764 INFO    MainThread:13712 [wandb_run.py:_restore():2526] restore done
+2025-05-19 18:31:59,817 INFO    MainThread:13712 [wandb_run.py:_footer_history_summary_info():4188] rendering history
+2025-05-19 18:31:59,817 INFO    MainThread:13712 [wandb_run.py:_footer_history_summary_info():4220] rendering summary
+2025-05-19 18:31:59,817 INFO    MainThread:13712 [wandb_run.py:_footer_sync_info():4149] logging synced files

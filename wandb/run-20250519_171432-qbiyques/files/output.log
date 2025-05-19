@@ -1,0 +1,17 @@
+Error loading training data: [Errno 2] No such file or directory: './romanized/ta.romanized.rejoined.tsv'
+Traceback (most recent call last):
+  File "C:\Users\SAI TEJA M S\Documents\Deep_Learning_Assignment_3\src\training\train.py", line 69, in train_model
+    data_dict = load_dakshina_data(language=config.language)
+  File "C:\Users\SAI TEJA M S\Documents\Deep_Learning_Assignment_3\src\data\preprocessing.py", line 59, in load_dakshina_data
+    train_df = pd.read_csv(train_file, sep='\t', header=None, on_bad_lines='skip')
+  File "C:\Users\SAI TEJA M S\miniconda3\envs\Translit\lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\SAI TEJA M S\miniconda3\envs\Translit\lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\SAI TEJA M S\miniconda3\envs\Translit\lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\SAI TEJA M S\miniconda3\envs\Translit\lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\SAI TEJA M S\miniconda3\envs\Translit\lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './romanized/ta.romanized.rejoined.tsv'

@@ -1,0 +1,27 @@
+Looking for training file at: ta\lexicons\ta.translit.sampled.train.tsv
+Successfully loaded Dakshina dataset for ta
+Train set: 68218 examples
+Dev set: 6827 examples
+Test set: 6864 examples
+Source vocabulary size: 50
+Target vocabulary size: 30
+The model has 207,646 trainable parameters
+  0%|                                                                                                                                                               | 0/1066 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\SAI TEJA M S\Documents\Deep_Learning_Assignment_3\src\training\train.py", line 135, in train_model
+    train_loss = train_epoch(
+  File "C:\Users\SAI TEJA M S\Documents\Deep_Learning_Assignment_3\src\training\train.py", line 32, in train_epoch
+    for batch in tqdm(iterator):
+  File "C:\Users\SAI TEJA M S\miniconda3\envs\Translit\lib\site-packages\tqdm\std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "C:\Users\SAI TEJA M S\miniconda3\envs\Translit\lib\site-packages\torch\utils\data\dataloader.py", line 733, in __next__
+    data = self._next_data()
+  File "C:\Users\SAI TEJA M S\miniconda3\envs\Translit\lib\site-packages\torch\utils\data\dataloader.py", line 789, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\Users\SAI TEJA M S\miniconda3\envs\Translit\lib\site-packages\torch\utils\data\_utils\fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\SAI TEJA M S\miniconda3\envs\Translit\lib\site-packages\torch\utils\data\_utils\fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\SAI TEJA M S\Documents\Deep_Learning_Assignment_3\src\data\preprocessing.py", line 33, in __getitem__
+    target_indices = [self.target_vocab['<SOS>']] + target_indices + [self.target_vocab['<EOS>']]
+KeyError: '<SOS>'

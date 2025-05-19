@@ -1,0 +1,18 @@
+Looking for training file at: ta\lexicons\ta.translit.sampled.train.tsv
+Special tokens in vocabulary:
+Source vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'ஃ', 'அ', 'ஆ', 'இ', 'ஈ', 'உ']
+Target vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'a', 'b', 'c', 'd', 'e', 'f']
+Successfully loaded Dakshina dataset for ta
+Train set: 68218 examples
+Dev set: 6827 examples
+Test set: 6864 examples
+Source vocabulary size: 50
+Target vocabulary size: 30
+The model has 207,646 trainable parameters
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1066/1066 [04:31<00:00,  3.93it/s]
+Traceback (most recent call last):
+  File "C:\Users\SAI TEJA M S\Documents\Deep_Learning_Assignment_3\src\training\train.py", line 151, in train_model
+    valid_accuracy, _ = calculate_accuracy(
+  File "C:\Users\SAI TEJA M S\Documents\Deep_Learning_Assignment_3\src\training\evaluate.py", line 94, in calculate_accuracy
+    if idx == inv_target_vocab['<EOS>']:
+KeyError: '<EOS>'

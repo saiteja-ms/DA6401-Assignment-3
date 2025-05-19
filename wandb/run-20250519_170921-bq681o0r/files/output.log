@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "C:\Users\SAI TEJA M S\Documents\Deep_Learning_Assignment_3\src\training\train.py", line 69, in train_model
+    data_dict = load_dakshina_data(language=config.language)
+  File "C:\Users\SAI TEJA M S\Documents\Deep_Learning_Assignment_3\src\data\preprocessing.py", line 57, in load_dakshina_data
+    train_df = pd.read_csv(train_file, sep='\t', header=None)
+  File "C:\Users\SAI TEJA M S\miniconda3\envs\Translit\lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\SAI TEJA M S\miniconda3\envs\Translit\lib\site-packages\pandas\io\parsers\readers.py", line 626, in _read
+    return parser.read(nrows)
+  File "C:\Users\SAI TEJA M S\miniconda3\envs\Translit\lib\site-packages\pandas\io\parsers\readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+  File "C:\Users\SAI TEJA M S\miniconda3\envs\Translit\lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "parsers.pyx", line 905, in pandas._libs.parsers.TextReader._read_rows
+  File "parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "parsers.pyx", line 2061, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 2 fields in line 1096, saw 3

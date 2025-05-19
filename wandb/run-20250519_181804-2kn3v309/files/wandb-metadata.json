@@ -1,0 +1,37 @@
+{
+  "os": "Windows-10-10.0.26100-SP0",
+  "python": "CPython 3.9.21",
+  "startedAt": "2025-05-19T12:48:04.600373Z",
+  "args": [
+    "--mode",
+    "train",
+    "--language",
+    "ta",
+    "--model_type",
+    "vanilla",
+    "--data_dir",
+    "ta"
+  ],
+  "program": "C:\\Users\\SAI TEJA M S\\Documents\\Deep_Learning_Assignment_3\\main.py",
+  "codePath": "main.py",
+  "email": "me21b171@smail.iitm.ac.in",
+  "root": "C:\\Users\\SAI TEJA M S\\Documents\\Deep_Learning_Assignment_3",
+  "host": "DESKTOP-DB55RJT",
+  "executable": "C:\\Users\\SAI TEJA M S\\miniconda3\\envs\\Translit\\python.exe",
+  "codePathLocal": "main.py",
+  "cpu_count": 10,
+  "cpu_count_logical": 12,
+  "disk": {
+    "/": {
+      "total": "501964861440",
+      "used": "104353652736"
+    }
+  },
+  "memory": {
+    "total": "16849256448"
+  },
+  "cpu": {
+    "count": 10,
+    "countLogical": 12
+  }
+}
