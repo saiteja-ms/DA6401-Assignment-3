@@ -1,0 +1,19 @@
+{"time":"2025-05-20T20:14:47.0854865+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\DELL\\Documents\\SEMESTER 8\\Deep Learning\\Assignment_3\\DA6401-Assignment-3\\wandb\\run-20250520_201447-gvoz1u7p\\logs\\debug-core.log"}
+{"time":"2025-05-20T20:14:47.5995019+05:30","level":"INFO","msg":"created new stream","id":"gvoz1u7p"}
+{"time":"2025-05-20T20:14:47.5995019+05:30","level":"INFO","msg":"stream: started","id":"gvoz1u7p"}
+{"time":"2025-05-20T20:14:47.5995019+05:30","level":"INFO","msg":"handler: started","stream_id":"gvoz1u7p"}
+{"time":"2025-05-20T20:14:47.5995019+05:30","level":"INFO","msg":"sender: started","stream_id":"gvoz1u7p"}
+{"time":"2025-05-20T20:14:47.5995019+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"gvoz1u7p"}
+{"time":"2025-05-20T20:14:48.3054173+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-20T21:20:54.7974264+05:30","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/transliteration-seq2seq/gvoz1u7p/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-05-20T21:21:02.3534131+05:30","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/transliteration-seq2seq/gvoz1u7p/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-05-20T21:21:20.7307579+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-05-20T21:22:49.4590454+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-20T21:22:49.4590454+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-20T21:22:50.4915264+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.2661292,"progress":"8.3KB/8.3KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.2661292,"progress":"372B/372B"}],"total_operations":2}}
+{"time":"2025-05-20T21:22:51.074978+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-20T21:22:51.6903257+05:30","level":"INFO","msg":"stream: closing","id":"gvoz1u7p"}
+{"time":"2025-05-20T21:22:51.6903257+05:30","level":"INFO","msg":"sender: closed","stream_id":"gvoz1u7p"}
+{"time":"2025-05-20T21:22:51.6908339+05:30","level":"INFO","msg":"handler: closed","stream_id":"gvoz1u7p"}
+{"time":"2025-05-20T21:22:51.6908339+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"gvoz1u7p"}
+{"time":"2025-05-20T21:22:51.6908339+05:30","level":"INFO","msg":"stream: closed","id":"gvoz1u7p"}

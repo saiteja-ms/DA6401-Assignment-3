@@ -1,0 +1,1 @@
+{"_timestamp":1.7477563692416296e+09,"trainable_parameters":116530,"valid_loss":0.5634118805978899,"test_accuracy":0,"epoch":9,"test_loss":0.5567775508692098,"optimizer_type":"adam","valid_accuracy":0,"_runtime":4082.1583218,"_wandb":{"runtime":4082},"epoch_time_sec":13,"learning_rate":0.00013128612472784114,"train_loss":0.4558157431447484,"epoch_time_min":6,"_step":12}

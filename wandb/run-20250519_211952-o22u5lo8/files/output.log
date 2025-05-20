@@ -1,0 +1,19 @@
+Starting training run with config: {'language': 'ta', 'embedding_size': 64, 'hidden_size': 128, 'encoder_layers': 1, 'decoder_layers': 1, 'cell_type': 'lstm', 'dropout': 0.2, 'learning_rate': 0.001, 'batch_size': 64, 'n_epochs': 20, 'clip': 1.0, 'teacher_forcing_ratio': 0.5, 'use_attention': False, 'data_dir': '', 'max_seq_len': 50}
+Attempting to load data from: ta\lexicons\ta.translit.sampled.train.tsv, ta\lexicons\ta.translit.sampled.dev.tsv, ta\lexicons\ta.translit.sampled.test.tsv
+Source vocabulary size: 30
+Target vocabulary size: 50
+Sample Source Vocab: [('<PAD>', 0), ('<UNK>', 1), ('<SOS>', 2), ('<EOS>', 3), ('a', 4), ('b', 5), ('c', 6), ('d', 7), ('e', 8), ('f', 9)]
+Sample Target Vocab: [('<PAD>', 0), ('<UNK>', 1), ('<SOS>', 2), ('<EOS>', 3), ('ஃ', 4), ('அ', 5), ('ஆ', 6), ('இ', 7), ('ஈ', 8), ('உ', 9)]
+Successfully loaded Dakshina dataset for ta
+Train set: 68218 examples
+Dev set: 6827 examples
+Test set: 6864 examples
+Using device: cuda
+The model has 210,226 trainable parameters
+Training:   0%|                                               | 0/1066 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\training\train.py", line 217, in train_model
+    train_loss = train_epoch(
+  File "C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\training\train.py", line 81, in train_epoch
+    output = output[batch_size:]
+NameError: name 'batch_size' is not defined

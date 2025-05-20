@@ -1,0 +1,16 @@
+{"time":"2025-05-19T23:54:22.7667044+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\DELL\\Documents\\SEMESTER 8\\Deep Learning\\Assignment_3\\DA6401-Assignment-3\\wandb\\run-20250519_235422-b3ez3im9\\logs\\debug-core.log"}
+{"time":"2025-05-19T23:54:23.4680442+05:30","level":"INFO","msg":"created new stream","id":"b3ez3im9"}
+{"time":"2025-05-19T23:54:23.4680442+05:30","level":"INFO","msg":"stream: started","id":"b3ez3im9"}
+{"time":"2025-05-19T23:54:23.468577+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"b3ez3im9"}
+{"time":"2025-05-19T23:54:23.468577+05:30","level":"INFO","msg":"handler: started","stream_id":"b3ez3im9"}
+{"time":"2025-05-19T23:54:23.468577+05:30","level":"INFO","msg":"sender: started","stream_id":"b3ez3im9"}
+{"time":"2025-05-19T23:54:23.8191746+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T23:54:28.797974+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T23:54:28.797974+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T23:54:29.8080254+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.568551,"progress":"120B/120B"},{"desc":"uploading config.yaml","runtime_seconds":0.0916036,"progress":"897B/897B"}],"total_operations":2}}
+{"time":"2025-05-19T23:54:30.1997946+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T23:54:30.6629311+05:30","level":"INFO","msg":"stream: closing","id":"b3ez3im9"}
+{"time":"2025-05-19T23:54:30.6629311+05:30","level":"INFO","msg":"handler: closed","stream_id":"b3ez3im9"}
+{"time":"2025-05-19T23:54:30.6629311+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"b3ez3im9"}
+{"time":"2025-05-19T23:54:30.6634399+05:30","level":"INFO","msg":"sender: closed","stream_id":"b3ez3im9"}
+{"time":"2025-05-19T23:54:30.6634399+05:30","level":"INFO","msg":"stream: closed","id":"b3ez3im9"}

@@ -1,0 +1,211 @@
+Starting training run with config: {'batch_size': 128, 'cell_type': 'gru', 'clip': 1, 'data_dir': '../dakshina_dataset_v1.0', 'decoder_layers': 2, 'dropout': 0, 'embedding_size': 64, 'encoder_layers': 2, 'hidden_size': 256, 'language': 'ta', 'learning_rate': 0.0005, 'max_seq_len': 50, 'n_epochs': 15, 'teacher_forcing_ratio': 0.5, 'use_attention': False}
+Attempting to load data from: ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.train.tsv, ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.dev.tsv, ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.test.tsv
+Error: Training file not found at ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.train.tsv
+Current working directory: C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3
+Falling back to creating a small test dataset for debugging.
+Creating a minimal test dataset for debugging...
+Created minimal test dataset with:
+Train set: 2 examples
+Dev set: 1 examples
+Test set: 1 examples
+Source vocabulary size: 15
+Target vocabulary size: 20
+Max sequence length: 50
+Using device: cuda
+The model has 1,291,476 trainable parameters
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  4.39it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 12.41it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 33.79it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: லல
+Target text: சோதனை
+Match: False
+Epoch: 01 | Time: 0m 0s
+	Train Loss: 2.9957
+	 Val. Loss: 2.9957
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-1661u6xa.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  4.38it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 11.49it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 33.79it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: லல
+Target text: சோதனை
+Match: False
+Epoch: 02 | Time: 0m 0s
+	Train Loss: 2.9947
+	 Val. Loss: 2.9956
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-1661u6xa.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  4.33it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 12.84it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 55.47it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: லல
+Target text: சோதனை
+Match: False
+Epoch: 03 | Time: 0m 0s
+	Train Loss: 2.9933
+	 Val. Loss: 2.9955
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-1661u6xa.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  4.25it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 12.37it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 49.98it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: லல
+Target text: சோதனை
+Match: False
+Epoch: 04 | Time: 0m 0s
+	Train Loss: 2.9913
+	 Val. Loss: 2.9954
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-1661u6xa.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  4.62it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 12.57it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 53.86it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: லல
+Target text: சோதனை
+Match: False
+Epoch: 05 | Time: 0m 0s
+	Train Loss: 2.9889
+	 Val. Loss: 2.9953
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-1661u6xa.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  4.53it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 13.23it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 54.81it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: லல
+Target text: சோதனை
+Match: False
+Epoch: 06 | Time: 0m 0s
+	Train Loss: 2.9856
+	 Val. Loss: 2.9951
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-1661u6xa.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  4.52it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 12.82it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 33.12it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: லல
+Target text: சோதனை
+Match: False
+Epoch: 07 | Time: 0m 0s
+	Train Loss: 2.9817
+	 Val. Loss: 2.9949
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-1661u6xa.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  4.40it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 12.55it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 58.44it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: லல
+Target text: சோதனை
+Match: False
+Epoch: 08 | Time: 0m 0s
+	Train Loss: 2.9758
+	 Val. Loss: 2.9946
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-1661u6xa.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  4.35it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 12.62it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 57.13it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: லல
+Target text: சோதனை
+Match: False
+Epoch: 09 | Time: 0m 0s
+	Train Loss: 2.9672
+	 Val. Loss: 2.9943
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-1661u6xa.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  4.41it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 13.44it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 47.40it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: லல
+Target text: சோதனை
+Match: False
+Epoch: 10 | Time: 0m 0s
+	Train Loss: 2.9551
+	 Val. Loss: 2.9941
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-1661u6xa.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  4.24it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   

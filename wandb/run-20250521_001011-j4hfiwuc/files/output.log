@@ -1,0 +1,56 @@
+Actual wandb run name: vanilla_lstm_emb64_hid128_enc1_dec1_drop0.0_adam_lr0.001000_batch64
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+Actual wandb run name: vanilla_lstm_emb64_hid128_enc1_dec1_drop0.0_adam_lr0.001000_batch64
+Starting training run with config: {'language': 'ta', 'embedding_size': 128, 'hidden_size': 256, 'num_layers': 3, 'cell_type': 'lstm', 'dropout': 0.2, 'learning_rate': 0.001, 'batch_size': 64, 'n_epochs': 20, 'clip': 1.0, 'teacher_forcing_ratio': 0.5, 'use_attention': False, 'max_seq_len': 50, 'optimizer': 'adam', 'weight_decay': 0, 'data_dir': '.'}
+Looking for training file at: .\ta\lexicons\ta.translit.sampled.train.tsv
+Special tokens in vocabulary:
+Source vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'a', 'b', 'c', 'd', 'e', 'f']
+Target vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'ஃ', 'அ', 'ஆ', 'இ', 'ஈ', 'உ']
+Successfully loaded Dakshina dataset for ta
+Train set: 68218 examples
+Dev set: 6827 examples
+Test set: 6864 examples
+Source vocabulary size: 30
+Target vocabulary size: 50
+Max sequence length: 50
+Using device: cuda
+The model has 2,918,962 trainable parameters
+Training:   2%|▋                                     | 21/1066 [00:08<06:40,  2.61it/s]
+Traceback (most recent call last):
+  File "C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\main.py", line 459, in <module>
+    main()
+  File "C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\main.py", line 155, in main
+    vanilla_model, vanilla_accuracy, vanilla_predictions = train_model(vanilla_config)
+  File "C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\training\train.py", line 277, in train_model
+    train_loss = train_epoch(
+  File "C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\training\train.py", line 75, in train_epoch
+    weighted_loss.backward()
+  File "C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\torch\_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\torch\autograd\__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\torch\autograd\graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\main.py", line 459, in <module>
+    main()
+  File "C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\main.py", line 155, in main
+    vanilla_model, vanilla_accuracy, vanilla_predictions = train_model(vanilla_config)
+  File "C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\training\train.py", line 277, in train_model
+    train_loss = train_epoch(
+  File "C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\training\train.py", line 75, in train_epoch
+    weighted_loss.backward()
+  File "C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\torch\_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\torch\autograd\__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\torch\autograd\graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "C:\Users\DELL\anaconda3\envs\Transliteration\lib\threading.py", line 1080, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+KeyboardInterrupt
+[0m

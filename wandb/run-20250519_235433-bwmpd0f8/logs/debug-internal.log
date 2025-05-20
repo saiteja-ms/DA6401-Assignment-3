@@ -1,0 +1,16 @@
+{"time":"2025-05-19T23:54:33.8656437+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\DELL\\Documents\\SEMESTER 8\\Deep Learning\\Assignment_3\\DA6401-Assignment-3\\wandb\\run-20250519_235433-bwmpd0f8\\logs\\debug-core.log"}
+{"time":"2025-05-19T23:54:34.5094257+05:30","level":"INFO","msg":"created new stream","id":"bwmpd0f8"}
+{"time":"2025-05-19T23:54:34.5094257+05:30","level":"INFO","msg":"handler: started","stream_id":"bwmpd0f8"}
+{"time":"2025-05-19T23:54:34.5099566+05:30","level":"INFO","msg":"stream: started","id":"bwmpd0f8"}
+{"time":"2025-05-19T23:54:34.5099566+05:30","level":"INFO","msg":"sender: started","stream_id":"bwmpd0f8"}
+{"time":"2025-05-19T23:54:34.5099566+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"bwmpd0f8"}
+{"time":"2025-05-19T23:54:34.8601809+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T23:54:36.1294495+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T23:54:36.1294495+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T23:54:37.1330994+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading requirements.txt","runtime_seconds":1.3413986,"progress":"2.6KB/2.6KB"},{"desc":"uploading output.log","runtime_seconds":0.6407919,"progress":"1.6KB/1.6KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.6407919,"progress":"119B/119B"},{"desc":"uploading config.yaml","runtime_seconds":0.2033843,"progress":"895B/895B"}],"total_operations":4}}
+{"time":"2025-05-19T23:54:37.3600994+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T23:54:37.7754349+05:30","level":"INFO","msg":"stream: closing","id":"bwmpd0f8"}
+{"time":"2025-05-19T23:54:37.7754349+05:30","level":"INFO","msg":"handler: closed","stream_id":"bwmpd0f8"}
+{"time":"2025-05-19T23:54:37.7754349+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"bwmpd0f8"}
+{"time":"2025-05-19T23:54:37.7754349+05:30","level":"INFO","msg":"sender: closed","stream_id":"bwmpd0f8"}
+{"time":"2025-05-19T23:54:37.7759429+05:30","level":"INFO","msg":"stream: closed","id":"bwmpd0f8"}

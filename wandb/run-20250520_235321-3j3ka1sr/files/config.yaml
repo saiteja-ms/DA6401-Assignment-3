@@ -1,0 +1,58 @@
+_wandb:
+    value:
+        cli_version: 0.19.11
+        m: []
+        python_version: 3.9.21
+        t:
+            "1":
+                - 1
+                - 55
+            "2":
+                - 1
+                - 55
+            "3":
+                - 2
+                - 13
+                - 16
+                - 17
+                - 23
+                - 55
+            "4": 3.9.21
+            "5": 0.19.11
+            "8":
+                - 3
+                - 8
+            "10":
+                - 3
+            "12": 0.19.11
+            "13": windows-amd64
+batch_size:
+    value: 128
+cell_type:
+    value: lstm
+clip:
+    value: 1
+data_dir:
+    value: .
+dropout:
+    value: 0.3
+embedding_size:
+    value: 64
+hidden_size:
+    value: 256
+language:
+    value: ta
+learning_rate:
+    value: 0.00735
+max_seq_len:
+    value: 50
+n_epochs:
+    value: 10
+num_layers:
+    value: 2
+optimizer:
+    value: adam
+teacher_forcing_ratio:
+    value: 0.5
+use_attention:
+    value: true

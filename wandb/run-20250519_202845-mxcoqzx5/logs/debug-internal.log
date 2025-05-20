@@ -1,0 +1,16 @@
+{"time":"2025-05-19T20:28:45.8614549+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\DELL\\Documents\\SEMESTER 8\\Deep Learning\\Assignment_3\\DA6401-Assignment-3\\wandb\\run-20250519_202845-mxcoqzx5\\logs\\debug-core.log"}
+{"time":"2025-05-19T20:28:46.6491802+05:30","level":"INFO","msg":"created new stream","id":"mxcoqzx5"}
+{"time":"2025-05-19T20:28:46.6497198+05:30","level":"INFO","msg":"stream: started","id":"mxcoqzx5"}
+{"time":"2025-05-19T20:28:46.6497198+05:30","level":"INFO","msg":"handler: started","stream_id":"mxcoqzx5"}
+{"time":"2025-05-19T20:28:46.6497198+05:30","level":"INFO","msg":"sender: started","stream_id":"mxcoqzx5"}
+{"time":"2025-05-19T20:28:46.6497198+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"mxcoqzx5"}
+{"time":"2025-05-19T20:28:47.0584963+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T21:20:45.6044198+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T21:20:45.6049574+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T21:20:46.6350466+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.3717728,"progress":"6.0KB/6.0KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3717728,"progress":"277B/277B"},{"desc":"uploading config.yaml","runtime_seconds":0.0871027,"progress":"952B/952B"}],"total_operations":3}}
+{"time":"2025-05-19T21:20:47.2198182+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T21:20:47.7244355+05:30","level":"INFO","msg":"stream: closing","id":"mxcoqzx5"}
+{"time":"2025-05-19T21:20:47.7244355+05:30","level":"INFO","msg":"handler: closed","stream_id":"mxcoqzx5"}
+{"time":"2025-05-19T21:20:47.7244355+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"mxcoqzx5"}
+{"time":"2025-05-19T21:20:47.7274342+05:30","level":"INFO","msg":"sender: closed","stream_id":"mxcoqzx5"}
+{"time":"2025-05-19T21:20:47.7274342+05:30","level":"INFO","msg":"stream: closed","id":"mxcoqzx5"}

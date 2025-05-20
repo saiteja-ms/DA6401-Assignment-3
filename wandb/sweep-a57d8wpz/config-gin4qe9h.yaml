@@ -1,0 +1,48 @@
+wandb_version: 1
+
+batch_size:
+  value: 128
+cell_type:
+  value: lstm
+clip:
+  value: 1
+data_dir:
+  value: .
+decoder_layers:
+  value: 1
+dropout:
+  value: 0
+embedding_size:
+  value: 128
+encoder_layers:
+  value: 3
+hidden_size:
+  value: 256
+language:
+  value: ta
+learning_rate:
+  value: 0.002390740678943167
+max_seq_len:
+  value: 50
+momentum:
+  value: 0
+n_epochs:
+  value: 10
+optimizer:
+  value: adam
+rmsprop_alpha:
+  value: 0.99
+scheduler:
+  value: cosine
+scheduler_factor:
+  value: 0.5
+scheduler_patience:
+  value: 5
+scheduler_t_max:
+  value: 20
+teacher_forcing_ratio:
+  value: 0.5
+use_attention:
+  value: false
+weight_decay:
+  value: 0

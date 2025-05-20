@@ -1,0 +1,331 @@
+Actual wandb run name: vanilla_lstm_emb64_hid128_enc1_dec1_drop0.0_adam_lr0.001000_batch64
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+Actual wandb run name: vanilla_lstm_emb64_hid128_enc1_dec1_drop0.0_adam_lr0.001000_batch64
+Starting training run with config: {'language': 'ta', 'embedding_size': 64, 'hidden_size': 256, 'num_layers': 2, 'cell_type': 'lstm', 'dropout': 0.3, 'learning_rate': 0.00735, 'batch_size': 128, 'n_epochs': 10, 'clip': 1.0, 'teacher_forcing_ratio': 0.5, 'use_attention': True, 'max_seq_len': 50, 'optimizer': 'adam', 'data_dir': '.'}
+Looking for training file at: .\ta\lexicons\ta.translit.sampled.train.tsv
+Special tokens in vocabulary:
+Source vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'a', 'b', 'c', 'd', 'e', 'f']
+Target vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'ஃ', 'அ', 'ஆ', 'இ', 'ஈ', 'உ']
+Successfully loaded Dakshina dataset for ta
+Train set: 68218 examples
+Dev set: 6827 examples
+Test set: 6864 examples
+Source vocabulary size: 30
+Target vocabulary size: 50
+Max sequence length: 50
+Using device: cuda
+The model has 2,139,826 trainable parameters
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 533/533 [02:27<00:00,  3.62it/s]
+Evaluating Loss: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:05<00:00, 10.14it/s]
+Calculating Accuracy: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:09<00:00,  5.88it/s]
+Epoch: 01 | Time: 2m 41s
+	Train Loss: 0.2924
+	 Val. Loss: 0.1309
+	 Val. Accuracy: 0.4528
+	 Learning Rate: 0.007350
+Saved new best model to best-model-3j3ka1sr.pt
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 533/533 [02:55<00:00,  3.04it/s]
+Evaluating Loss: 100%|█████████████████████████████████| 54/54 [00:05<00:00,  9.11it/s]
+Calculating Accuracy: 100%|████████████████████████████| 54/54 [00:10<00:00,  5.22it/s]
+Epoch: 02 | Time: 3m 11s
+	Train Loss: 0.0904
+	 Val. Loss: 0.1155
+	 Val. Accuracy: 0.5330
+	 Learning Rate: 0.007350
+Saved new best model to best-model-3j3ka1sr.pt
+Training: 100%|██████████████████████████████████████| 533/533 [02:56<00:00,  3.02it/s]
+Evaluating Loss: 100%|█████████████████████████████████| 54/54 [00:06<00:00,  8.95it/s]
+Calculating Accuracy: 100%|████████████████████████████| 54/54 [00:09<00:00,  5.85it/s]
+Epoch: 03 | Time: 3m 11s
+	Train Loss: 0.0762
+	 Val. Loss: 0.1099
+	 Val. Accuracy: 0.5467
+	 Learning Rate: 0.007350
+Saved new best model to best-model-3j3ka1sr.pt
+Training: 100%|██████████████████████████████████████| 533/533 [02:51<00:00,  3.10it/s]
+Evaluating Loss: 100%|███| 54/54 [00:05<00:00,  9.19it/s]
+Calculating Accuracy: 100%|█| 54/54 [00:08<00:00,  6.04it
+Epoch: 04 | Time: 3m 6s
+	Train Loss: 0.0687
+	 Val. Loss: 0.1081
+	 Val. Accuracy: 0.5704
+	 Learning Rate: 0.007350
+Saved new best model to best-model-3j3ka1sr.pt
+Training: 100%|████████| 533/533 [02:58<00:00,  2.98it/s]
+Evaluating Loss: 100%|███| 54/54 [00:07<00:00,  7.71it/s]
+Calculating Accuracy: 100%|█| 54/54 [00:09<00:00,  5.43it
+Epoch: 05 | Time: 3m 15s
+	Train Loss: 0.0636
+	 Val. Loss: 0.1101
+	 Val. Accuracy: 0.5745
+	 Learning Rate: 0.007350
+Training: 100%|████████| 533/533 [03:10<00:00,  2.80it/s]
+Evaluating Loss: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:07<00:00,  7.11it/s]
+Calculating Accuracy: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:11<00:00,  4.79it/s]
+Epoch: 06 | Time: 3m 29s
+	Train Loss: 0.0606
+	 Val. Loss: 0.1110
+	 Val. Accuracy: 0.5779
+	 Learning Rate: 0.007350
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 533/533 [04:00<00:00,  2.22it/s]
+Evaluating Loss: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:07<00:00,  6.79it/s]
+Calculating Accuracy: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:12<00:00,  4.47it/s]
+Epoch: 07 | Time: 4m 20s
+	Train Loss: 0.0577
+	 Val. Loss: 0.1138
+	 Val. Accuracy: 0.5792
+	 Learning Rate: 0.007350
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 533/533 [03:56<00:00,  2.25it/s]
+Evaluating Loss: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:07<00:00,  6.86it/s]
+Calculating Accuracy: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:12<00:00,  4.22it/s]
+Epoch: 08 | Time: 4m 17s
+	Train Loss: 0.0554
+	 Val. Loss: 0.1093
+	 Val. Accuracy: 0.5959
+	 Learning Rate: 0.007350
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 533/533 [04:01<00:00,  2.20it/s]
+Evaluating Loss: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:07<00:00,  6.92it/s]
+Calculating Accuracy: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:11<00:00,  4.52it/s]
+Epoch: 09 | Time: 4m 21s
+	Train Loss: 0.0544
+	 Val. Loss: 0.1132
+	 Val. Accuracy: 0.5881
+	 Learning Rate: 0.007350
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 533/533 [03:57<00:00,  2.25it/s]
+Evaluating Loss: 100%|███| 54/54 [00:07<00:00,  6.94it/s]
+Calculating Accuracy: 100%|█| 54/54 [00:11<00:00,  4.70it
+Epoch: 10 | Time: 4m 16s
+	Train Loss: 0.0528
+	 Val. Loss: 0.1080
+	 Val. Accuracy: 0.5988
+	 Learning Rate: 0.007350
+Saved new best model to best-model-3j3ka1sr.pt
+Training finished.
+Evaluating best model on test set...
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\training\train.py:343: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(model_save_path, map_location=device))
+Evaluating Loss: 100%|███| 54/54 [00:07<00:00,  6.85it/s]
+Calculating Accuracy: 100%|█| 54/54 [00:12<00:00,  4.47it
+Test Loss: 0.1162
+Test Accuracy: 0.5816
+Saved predictions to predictions/attention/predictions-3j3ka1sr.json
+Generating attention visualizations...
+
+Generating attention heatmaps...
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2986 (\N{TAMIL LETTER PA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Matplotlib currently does not support Tamil natively.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3006 (\N{TAMIL VOWEL SIGN AA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2992 (\N{TAMIL LETTER RA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3021 (\N{TAMIL SIGN VIRAMA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2986 (\N{TAMIL LETTER PA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Matplotlib currently does not support Tamil natively.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3006 (\N{TAMIL VOWEL SIGN AA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2992 (\N{TAMIL LETTER RA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3021 (\N{TAMIL SIGN VIRAMA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2986 (\N{TAMIL LETTER PA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Matplotlib currently does not support Tamil natively.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3006 (\N{TAMIL VOWEL SIGN AA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2992 (\N{TAMIL LETTER RA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3021 (\N{TAMIL SIGN VIRAMA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2947 (\N{TAMIL SIGN VISARGA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3019 (\N{TAMIL VOWEL SIGN OO}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2986 (\N{TAMIL LETTER PA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Matplotlib currently does not support Tamil natively.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3006 (\N{TAMIL VOWEL SIGN AA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2992 (\N{TAMIL LETTER RA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3021 (\N{TAMIL SIGN VIRAMA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2947 (\N{TAMIL SIGN VISARGA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3019 (\N{TAMIL VOWEL SIGN OO}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2986 (\N{TAMIL LETTER PA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Matplotlib currently does not support Tamil natively.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3006 (\N{TAMIL VOWEL SIGN AA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2992 (\N{TAMIL LETTER RA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3021 (\N{TAMIL SIGN VIRAMA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2947 (\N{TAMIL SIGN VISARGA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3019 (\N{TAMIL VOWEL SIGN OO}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3015 (\N{TAMIL VOWEL SIGN EE}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2965 (\N{TAMIL LETTER KA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2986 (\N{TAMIL LETTER PA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Matplotlib currently does not support Tamil natively.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3006 (\N{TAMIL VOWEL SIGN AA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2992 (\N{TAMIL LETTER RA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3021 (\N{TAMIL SIGN VIRAMA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2947 (\N{TAMIL SIGN VISARGA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3019 (\N{TAMIL VOWEL SIGN OO}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3015 (\N{TAMIL VOWEL SIGN EE}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2965 (\N{TAMIL LETTER KA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3001 (\N{TAMIL LETTER HA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3007 (\N{TAMIL VOWEL SIGN I}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2958 (\N{TAMIL LETTER E}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3000 (\N{TAMIL LETTER SA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2986 (\N{TAMIL LETTER PA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Matplotlib currently does not support Tamil natively.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3006 (\N{TAMIL VOWEL SIGN AA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2992 (\N{TAMIL LETTER RA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3021 (\N{TAMIL SIGN VIRAMA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2947 (\N{TAMIL SIGN VISARGA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3019 (\N{TAMIL VOWEL SIGN OO}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3015 (\N{TAMIL VOWEL SIGN EE}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2965 (\N{TAMIL LETTER KA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3001 (\N{TAMIL LETTER HA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3007 (\N{TAMIL VOWEL SIGN I}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2958 (\N{TAMIL LETTER E}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3000 (\N{TAMIL LETTER SA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2986 (\N{TAMIL LETTER PA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Matplotlib currently does not support Tamil natively.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3006 (\N{TAMIL VOWEL SIGN AA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2992 (\N{TAMIL LETTER RA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3021 (\N{TAMIL SIGN VIRAMA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2947 (\N{TAMIL SIGN VISARGA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3019 (\N{TAMIL VOWEL SIGN OO}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3015 (\N{TAMIL VOWEL SIGN EE}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2965 (\N{TAMIL LETTER KA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3001 (\N{TAMIL LETTER HA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3007 (\N{TAMIL VOWEL SIGN I}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2958 (\N{TAMIL LETTER E}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3000 (\N{TAMIL LETTER SA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2986 (\N{TAMIL LETTER PA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Matplotlib currently does not support Tamil natively.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3006 (\N{TAMIL VOWEL SIGN AA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2992 (\N{TAMIL LETTER RA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3021 (\N{TAMIL SIGN VIRAMA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2947 (\N{TAMIL SIGN VISARGA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3019 (\N{TAMIL VOWEL SIGN OO}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3015 (\N{TAMIL VOWEL SIGN EE}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2965 (\N{TAMIL LETTER KA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3001 (\N{TAMIL LETTER HA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3007 (\N{TAMIL VOWEL SIGN I}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 2958 (\N{TAMIL LETTER E}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\seaborn\utils.py:61: UserWarning: Glyph 3000 (\N{TAMIL LETTER SA}) missing from font(s) DejaVu Sans.
+  fig.canvas.draw()
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\visualization\analysis.py:529: UserWarning: Glyph 2986 (\N{TAMIL LETTER PA}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\visualization\analysis.py:529: UserWarning: Matplotlib currently does not support Tamil natively.
+  plt.tight_layout()
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\visualization\analysis.py:529: UserWarning: Glyph 3006 (\N{TAMIL VOWEL SIGN AA}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\visualization\analysis.py:529: UserWarning: Glyph 3000 (\N{TAMIL LETTER SA}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\visualization\analysis.py:529: UserWarning: Glyph 3021 (\N{TAMIL SIGN VIRAMA}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\visualization\analysis.py:531: UserWarning: Glyph 2986 (\N{TAMIL LETTER PA}) missing from font(s) DejaVu Sans.
+  plt.savefig(buf, format='png')
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\visualization\analysis.py:531: UserWarning: Matplotlib currently does not support Tamil natively.
+  plt.savefig(buf, format='png')
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\visualization\analysis.py:531: UserWarning: Glyph 3006 (\N{TAMIL VOWEL SIGN AA}) missing from font(s) DejaVu Sans.
+  plt.savefig(buf, format='png')
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\visualization\analysis.py:531: UserWarning: Glyph 2992 (\N{TAMIL LETTER RA}) missing from font(s) DejaVu Sans.
+  plt.savefig(buf, format='png')
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\visualization\analysis.py:531: UserWarning: Glyph 3021 (\N{TAMIL SIGN VIRAMA}) missing from font(s) DejaVu Sans.
+  plt.savefig(buf, format='png')
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\visualization\analysis.py:531: UserWarning: Glyph 2947 (\N{TAMIL SIGN VISARGA}) missing from font(s) DejaVu Sans.
+  plt.savefig(buf, format='png')
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\visualization\analysis.py:531: UserWarning: Glyph 3019 (\N{TAMIL VOWEL SIGN OO}) missing from font(s) DejaVu Sans.
+  plt.savefig(buf, format='png')
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\visualization\analysis.py:531: UserWarning: Glyph 3015 (\N{TAMIL VOWEL SIGN EE}) missing from font(s) DejaVu Sans.
+  plt.savefig(buf, format='png')
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\visualization\analysis.py:531: UserWarning: Glyph 2965 (\N{TAMIL LETTER KA}) missing from font(s) DejaVu Sans.
+  plt.savefig(buf, format='png')
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\visualization\analysis.py:531: UserWarning: Glyph 3001 (\N{TAMIL LETTER HA}) missing from font(s) DejaVu Sans.
+  plt.savefig(buf, format='png')
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\visualization\analysis.py:531: UserWarning: Glyph 3007 (\N{TAMIL VOWEL SIGN I}) missing from font(s) DejaVu Sans.
+  plt.savefig(buf, format='png')
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\visualization\analysis.py:531: UserWarning: Glyph 2958 (\N{TAMIL LETTER E}) missing from font(s) DejaVu Sans.
+  plt.savefig(buf, format='png')
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\visualization\analysis.py:531: UserWarning: Glyph 3000 (\N{TAMIL LETTER SA}) missing from font(s) DejaVu Sans.
+  plt.savefig(buf, format='png')
+Error generating visualizations: '_io.BytesIO' object has no attribute 'ndim'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\training\train.py", line 400, in train_model
+    visualize_attention(model, test_loader, data_dict, device, wandb.run.id)
+  File "C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\visualization\analysis.py", line 536, in visualize_attention
+    wandb.log({"attention_heatmaps": wandb.Image(buf)})
+  File "C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\wandb\sdk\data_types\image.py", line 178, in __init__
+    self._initialize_from_data(data_or_path, mode, file_type)
+  File "C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\wandb\sdk\data_types\image.py", line 328, in _initialize_from_data
+    if data.ndim > 2:
+AttributeError: '_io.BytesIO' object has no attribute 'ndim'

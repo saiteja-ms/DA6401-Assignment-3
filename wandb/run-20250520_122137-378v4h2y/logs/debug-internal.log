@@ -1,0 +1,16 @@
+{"time":"2025-05-20T12:21:37.9264639+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\DELL\\Documents\\SEMESTER 8\\Deep Learning\\Assignment_3\\DA6401-Assignment-3\\wandb\\run-20250520_122137-378v4h2y\\logs\\debug-core.log"}
+{"time":"2025-05-20T12:21:38.5969416+05:30","level":"INFO","msg":"created new stream","id":"378v4h2y"}
+{"time":"2025-05-20T12:21:38.5974991+05:30","level":"INFO","msg":"handler: started","stream_id":"378v4h2y"}
+{"time":"2025-05-20T12:21:38.5974991+05:30","level":"INFO","msg":"stream: started","id":"378v4h2y"}
+{"time":"2025-05-20T12:21:38.5974991+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"378v4h2y"}
+{"time":"2025-05-20T12:21:38.5974991+05:30","level":"INFO","msg":"sender: started","stream_id":"378v4h2y"}
+{"time":"2025-05-20T12:21:38.9414753+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-20T14:39:19.3356881+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-20T14:39:19.3356881+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-20T14:39:20.3527697+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.5897746,"progress":"393B/393B"},{"desc":"uploading output.log","runtime_seconds":0.5897746,"progress":"34.5KB/34.5KB"},{"desc":"uploading config.yaml","runtime_seconds":0.2997213,"progress":"1017B/1017B"}],"total_operations":3}}
+{"time":"2025-05-20T14:39:20.6114148+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-20T14:39:21.1516252+05:30","level":"INFO","msg":"stream: closing","id":"378v4h2y"}
+{"time":"2025-05-20T14:39:21.1516252+05:30","level":"INFO","msg":"sender: closed","stream_id":"378v4h2y"}
+{"time":"2025-05-20T14:39:21.1521323+05:30","level":"INFO","msg":"handler: closed","stream_id":"378v4h2y"}
+{"time":"2025-05-20T14:39:21.1521323+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"378v4h2y"}
+{"time":"2025-05-20T14:39:21.1521323+05:30","level":"INFO","msg":"stream: closed","id":"378v4h2y"}

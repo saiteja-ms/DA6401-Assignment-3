@@ -1,0 +1,1 @@
+{"trainable_parameters":210226,"_step":3,"epoch_time_min":2,"_wandb":{"runtime":434},"_timestamp":1.7476774012902226e+09,"_runtime":387.502237,"train_loss":2.4785788068180907,"valid_loss":2.905987842060695,"epoch_time_sec":5,"valid_accuracy":0,"epoch":2}

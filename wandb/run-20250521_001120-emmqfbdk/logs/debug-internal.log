@@ -1,0 +1,16 @@
+{"time":"2025-05-21T00:11:20.3389934+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\DELL\\Documents\\SEMESTER 8\\Deep Learning\\Assignment_3\\DA6401-Assignment-3\\wandb\\run-20250521_001120-emmqfbdk\\logs\\debug-core.log"}
+{"time":"2025-05-21T00:11:20.9686379+05:30","level":"INFO","msg":"created new stream","id":"emmqfbdk"}
+{"time":"2025-05-21T00:11:20.9686379+05:30","level":"INFO","msg":"stream: started","id":"emmqfbdk"}
+{"time":"2025-05-21T00:11:20.9686379+05:30","level":"INFO","msg":"handler: started","stream_id":"emmqfbdk"}
+{"time":"2025-05-21T00:11:20.9686379+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"emmqfbdk"}
+{"time":"2025-05-21T00:11:20.9686379+05:30","level":"INFO","msg":"sender: started","stream_id":"emmqfbdk"}
+{"time":"2025-05-21T00:11:21.4060017+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-21T00:39:21.0710692+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-21T00:39:21.0710692+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-21T00:39:22.0824174+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.3450831,"progress":"7.0KB/7.0KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3450831,"progress":"398B/398B"},{"desc":"uploading config.yaml","runtime_seconds":0.0144687,"progress":"997B/997B"}],"total_operations":3}}
+{"time":"2025-05-21T00:39:22.6441428+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-21T00:39:23.5388419+05:30","level":"INFO","msg":"stream: closing","id":"emmqfbdk"}
+{"time":"2025-05-21T00:39:23.5388419+05:30","level":"INFO","msg":"handler: closed","stream_id":"emmqfbdk"}
+{"time":"2025-05-21T00:39:23.5388419+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"emmqfbdk"}
+{"time":"2025-05-21T00:39:23.5388419+05:30","level":"INFO","msg":"sender: closed","stream_id":"emmqfbdk"}
+{"time":"2025-05-21T00:39:23.5388419+05:30","level":"INFO","msg":"stream: closed","id":"emmqfbdk"}

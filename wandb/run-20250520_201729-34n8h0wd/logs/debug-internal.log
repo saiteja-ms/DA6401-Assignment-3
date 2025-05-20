@@ -1,0 +1,16 @@
+{"time":"2025-05-20T20:17:29.7323329+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\DELL\\Documents\\SEMESTER 8\\Deep Learning\\Assignment_3\\DA6401-Assignment-3\\wandb\\run-20250520_201729-34n8h0wd\\logs\\debug-core.log"}
+{"time":"2025-05-20T20:17:30.2625584+05:30","level":"INFO","msg":"created new stream","id":"34n8h0wd"}
+{"time":"2025-05-20T20:17:30.2625584+05:30","level":"INFO","msg":"handler: started","stream_id":"34n8h0wd"}
+{"time":"2025-05-20T20:17:30.2625584+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"34n8h0wd"}
+{"time":"2025-05-20T20:17:30.2625584+05:30","level":"INFO","msg":"stream: started","id":"34n8h0wd"}
+{"time":"2025-05-20T20:17:30.2625584+05:30","level":"INFO","msg":"sender: started","stream_id":"34n8h0wd"}
+{"time":"2025-05-20T20:17:30.8199512+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-20T20:17:34.4112483+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-20T20:17:34.4112483+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-20T20:17:35.4256084+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.6200011,"progress":"1.3KB/1.3KB"},{"desc":"uploading config.yaml","runtime_seconds":0.2793275,"progress":"1.1KB/1.1KB"}],"total_operations":2}}
+{"time":"2025-05-20T20:17:35.6058463+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-20T20:17:36.0313754+05:30","level":"INFO","msg":"stream: closing","id":"34n8h0wd"}
+{"time":"2025-05-20T20:17:36.0313754+05:30","level":"INFO","msg":"handler: closed","stream_id":"34n8h0wd"}
+{"time":"2025-05-20T20:17:36.0313754+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"34n8h0wd"}
+{"time":"2025-05-20T20:17:36.0313754+05:30","level":"INFO","msg":"sender: closed","stream_id":"34n8h0wd"}
+{"time":"2025-05-20T20:17:36.0313754+05:30","level":"INFO","msg":"stream: closed","id":"34n8h0wd"}

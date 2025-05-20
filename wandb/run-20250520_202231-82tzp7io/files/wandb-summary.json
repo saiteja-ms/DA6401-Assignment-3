@@ -1,0 +1,1 @@
+{"learning_rate":0.0015835902284812024,"epoch_time_min":6,"optimizer_type":"rmsprop","trainable_parameters":127282,"_timestamp":1.7477569758334284e+09,"_step":12,"train_loss":0.525713863225189,"epoch":9,"epoch_time_sec":43,"valid_accuracy":0,"test_loss":0.54134944247645,"_wandb":{"runtime":4224},"test_accuracy":0,"_runtime":4224.0842335,"valid_loss":0.5459680048940337}

@@ -1,0 +1,127 @@
+Starting training run with config: {'batch_size': 64, 'cell_type': 'lstm', 'clip': 1, 'data_dir': '../dakshina_dataset_v1.0', 'decoder_layers': 1, 'dropout': 0.3, 'embedding_size': 32, 'encoder_layers': 1, 'hidden_size': 128, 'language': 'ta', 'learning_rate': 0.001, 'max_seq_len': 50, 'n_epochs': 15, 'teacher_forcing_ratio': 0.5, 'use_attention': False}
+Attempting to load data from: ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.train.tsv, ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.dev.tsv, ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.test.tsv
+Error: Training file not found at ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.train.tsv
+Current working directory: C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3
+Falling back to creating a small test dataset for debugging.
+Creating a minimal test dataset for debugging...
+Created minimal test dataset with:
+Train set: 2 examples
+Dev set: 1 examples
+Test set: 1 examples
+Source vocabulary size: 15
+Target vocabulary size: 20
+Max sequence length: 50
+Using device: cuda
+The model has 169,588 trainable parameters
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  4.86it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 22.34it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 199.00it/s]
+Epoch: 01 | Time: 0m 0s
+	Train Loss: 2.9957
+	 Val. Loss: 2.9957
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-rhit3yrv.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.83it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 24.01it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 166.08it/s]
+Epoch: 02 | Time: 0m 0s
+	Train Loss: 2.9942
+	 Val. Loss: 2.9957
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.91it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 25.26it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 210.63it/s]
+Epoch: 03 | Time: 0m 0s
+	Train Loss: 2.9924
+	 Val. Loss: 2.9957
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.97it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 19.96it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 152.12it/s]
+Epoch: 04 | Time: 0m 0s
+	Train Loss: 2.9911
+	 Val. Loss: 2.9957
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.91it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 25.39it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 168.83it/s]
+Epoch: 05 | Time: 0m 0s
+	Train Loss: 2.9888
+	 Val. Loss: 2.9958
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  6.28it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 23.85it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 195.80it/s]
+Epoch: 06 | Time: 0m 0s
+	Train Loss: 2.9861
+	 Val. Loss: 2.9958
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  6.24it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 23.72it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 180.42it/s]
+Epoch: 07 | Time: 0m 0s
+	Train Loss: 2.9827
+	 Val. Loss: 2.9958
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  6.18it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 22.97it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 173.45it/s]
+Epoch: 08 | Time: 0m 0s
+	Train Loss: 2.9780
+	 Val. Loss: 2.9958
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.83it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 24.69it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 209.36it/s]
+Epoch: 09 | Time: 0m 0s
+	Train Loss: 2.9731
+	 Val. Loss: 2.9959
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  6.05it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 23.44it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 189.44it/s]
+Epoch: 10 | Time: 0m 0s
+	Train Loss: 2.9672
+	 Val. Loss: 2.9960
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.70it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 22.30it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 189.29it/s]
+Epoch: 11 | Time: 0m 0s
+	Train Loss: 2.9605
+	 Val. Loss: 2.9962
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  6.44it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 23.53it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 187.53it/s]
+Epoch: 12 | Time: 0m 0s
+	Train Loss: 2.9499
+	 Val. Loss: 2.9965
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  6.37it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 22.76it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 214.87it/s]
+Epoch: 13 | Time: 0m 0s
+	Train Loss: 2.9372
+	 Val. Loss: 2.9971
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  6.05it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 23.32it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 195.14it/s]
+Epoch: 14 | Time: 0m 0s
+	Train Loss: 2.9206
+	 Val. Loss: 2.9981
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  6.30it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 22.70it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 166.73it/s]
+Epoch: 15 | Time: 0m 0s
+	Train Loss: 2.8960
+	 Val. Loss: 3.0003
+	 Val. Accuracy: 0.0000
+Training finished.
+Evaluating best model on test set...
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 22.13it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 221.56it/s]
+Test Loss: 2.9955 | Test Accuracy: 0.0000
+Saved predictions to predictions/vanilla/predictions-rhit3yrv.json

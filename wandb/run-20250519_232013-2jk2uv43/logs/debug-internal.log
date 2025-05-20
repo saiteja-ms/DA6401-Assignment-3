@@ -1,0 +1,16 @@
+{"time":"2025-05-19T23:20:13.7992316+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\DELL\\Documents\\SEMESTER 8\\Deep Learning\\Assignment_3\\DA6401-Assignment-3\\wandb\\run-20250519_232013-2jk2uv43\\logs\\debug-core.log"}
+{"time":"2025-05-19T23:20:14.5081831+05:30","level":"INFO","msg":"created new stream","id":"2jk2uv43"}
+{"time":"2025-05-19T23:20:14.5081831+05:30","level":"INFO","msg":"handler: started","stream_id":"2jk2uv43"}
+{"time":"2025-05-19T23:20:14.5081831+05:30","level":"INFO","msg":"stream: started","id":"2jk2uv43"}
+{"time":"2025-05-19T23:20:14.5081831+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"2jk2uv43"}
+{"time":"2025-05-19T23:20:14.5081831+05:30","level":"INFO","msg":"sender: started","stream_id":"2jk2uv43"}
+{"time":"2025-05-19T23:20:14.9991534+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T23:27:27.9357272+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T23:27:27.9357272+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T23:27:29.650482+05:30","level":"INFO","msg":"stream: closing","id":"2jk2uv43"}
+{"time":"2025-05-19T23:27:29.650482+05:30","level":"WARN","msg":"sender: received Exit record more than once, ignoring"}
+{"time":"2025-05-19T23:27:30.4134076+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T23:27:30.843361+05:30","level":"INFO","msg":"sender: closed","stream_id":"2jk2uv43"}
+{"time":"2025-05-19T23:27:30.8440136+05:30","level":"INFO","msg":"handler: closed","stream_id":"2jk2uv43"}
+{"time":"2025-05-19T23:27:30.8440136+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"2jk2uv43"}
+{"time":"2025-05-19T23:27:30.8440136+05:30","level":"INFO","msg":"stream: closed","id":"2jk2uv43"}

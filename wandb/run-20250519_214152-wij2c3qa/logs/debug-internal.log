@@ -1,0 +1,16 @@
+{"time":"2025-05-19T21:41:52.2525503+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\DELL\\Documents\\SEMESTER 8\\Deep Learning\\Assignment_3\\DA6401-Assignment-3\\wandb\\run-20250519_214152-wij2c3qa\\logs\\debug-core.log"}
+{"time":"2025-05-19T21:41:53.0462892+05:30","level":"INFO","msg":"created new stream","id":"wij2c3qa"}
+{"time":"2025-05-19T21:41:53.0468205+05:30","level":"INFO","msg":"stream: started","id":"wij2c3qa"}
+{"time":"2025-05-19T21:41:53.0468205+05:30","level":"INFO","msg":"handler: started","stream_id":"wij2c3qa"}
+{"time":"2025-05-19T21:41:53.0468205+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"wij2c3qa"}
+{"time":"2025-05-19T21:41:53.0468205+05:30","level":"INFO","msg":"sender: started","stream_id":"wij2c3qa"}
+{"time":"2025-05-19T21:41:53.3855075+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T21:41:53.9411862+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T21:41:53.9411862+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T21:41:54.9524302+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.0364602,"progress":"1.6KB/1.6KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.0364602,"progress":"24B/24B"}],"total_operations":2}}
+{"time":"2025-05-19T21:41:55.7497476+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T21:41:56.2376683+05:30","level":"INFO","msg":"stream: closing","id":"wij2c3qa"}
+{"time":"2025-05-19T21:41:56.2376683+05:30","level":"INFO","msg":"handler: closed","stream_id":"wij2c3qa"}
+{"time":"2025-05-19T21:41:56.2376683+05:30","level":"INFO","msg":"sender: closed","stream_id":"wij2c3qa"}
+{"time":"2025-05-19T21:41:56.2376683+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"wij2c3qa"}
+{"time":"2025-05-19T21:41:56.2381747+05:30","level":"INFO","msg":"stream: closed","id":"wij2c3qa"}

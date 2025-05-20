@@ -1,0 +1,46 @@
+wandb_version: 1
+
+batch_size:
+  value: 32
+cell_type:
+  value: rnn
+clip:
+  value: 1
+data_dir:
+  value: .
+dropout:
+  value: 0.2
+embedding_size:
+  value: 64
+hidden_size:
+  value: 128
+language:
+  value: ta
+learning_rate:
+  value: 0.0031671804569624053
+max_seq_len:
+  value: 50
+momentum:
+  value: 0.9
+n_epochs:
+  value: 10
+num_layers:
+  value: 2
+optimizer:
+  value: rmsprop
+rmsprop_alpha:
+  value: 0.99
+scheduler:
+  value: cosine
+scheduler_factor:
+  value: 0.5
+scheduler_patience:
+  value: 5
+scheduler_t_max:
+  value: 20
+teacher_forcing_ratio:
+  value: 0.5
+use_attention:
+  value: false
+weight_decay:
+  value: 0.001

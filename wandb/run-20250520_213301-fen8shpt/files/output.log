@@ -1,0 +1,59 @@
+Actual wandb run name: azure-sweep-2
+Actual wandb run name: azure-sweep-2
+Starting training run with config: {'batch_size': 32, 'cell_type': 'rnn', 'clip': 1, 'data_dir': '.', 'dropout': 0.3, 'embedding_size': 64, 'hidden_size': 256, 'language': 'ta', 'learning_rate': 0.0017237072373810227, 'max_seq_len': 50, 'momentum': 0, 'n_epochs': 10, 'num_layers': 3, 'optimizer': 'rmsprop', 'rmsprop_alpha': 0.99, 'scheduler': 'none', 'scheduler_factor': 0.5, 'scheduler_patience': 5, 'scheduler_t_max': 20, 'teacher_forcing_ratio': 0.5, 'use_attention': False, 'weight_decay': 0}
+Looking for training file at: .\ta\lexicons\ta.translit.sampled.train.tsv
+Special tokens in vocabulary:
+Source vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'a', 'b', 'c', 'd', 'e', 'f']
+Target vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'ஃ', 'அ', 'ஆ', 'இ', 'ஈ', 'உ']
+Successfully loaded Dakshina dataset for ta
+Train set: 68218 examples
+Dev set: 6827 examples
+Test set: 6864 examples
+Source vocabulary size: 30
+Target vocabulary size: 50
+Max sequence length: 50
+Using device: cuda
+The model has 709,170 trainable parameters
+Training: 100%|████████████████████████████████████| 2132/2132 [08:02<00:00,  4.42it/s]
+Evaluating Loss: 100%|███████████████████████████████| 214/214 [00:33<00:00,  6.48it/s]
+Calculating Accuracy: 100%|██████████████████████████| 214/214 [00:08<00:00, 24.51it/s]
+Epoch: 01 | Time: 8m 44s
+	Train Loss: 0.5585
+	 Val. Loss: 0.5212
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.001724
+Saved new best model to best-model-fen8shpt.pt
+Training: 100%|████████████████████████████████████| 2132/2132 [12:04<00:00,  2.94it/s]
+Evaluating Loss: 100%|███████████████████████████████| 214/214 [00:11<00:00, 19.02it/s]
+Calculating Accuracy: 100%|██████████████████████████| 214/214 [00:05<00:00, 41.53it/s]
+Epoch: 02 | Time: 12m 21s
+	Train Loss: 0.5561
+	 Val. Loss: 0.5207
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.001724
+Saved new best model to best-model-fen8shpt.pt
+Training: 100%|████████████████████████████████████| 2132/2132 [07:53<00:00,  4.51it/s]
+Evaluating Loss: 100%|███████████████████████████████| 214/214 [00:10<00:00, 19.45it/s]
+Calculating Accuracy: 100%|██████████████████████████| 214/214 [00:04<00:00, 46.44it/s]
+Epoch: 03 | Time: 8m 8s
+	Train Loss: 0.5562
+	 Val. Loss: 0.5211
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.001724
+Training: 100%|████████████████████████████████████| 2132/2132 [07:34<00:00,  4.69it/s]
+Evaluating Loss: 100%|███████████████████████████████| 214/214 [00:11<00:00, 19.22it/s]
+Calculating Accuracy: 100%|██████████████████████████| 214/214 [00:24<00:00,  8.68it/s]
+Epoch: 04 | Time: 8m 10s
+	Train Loss: 0.5616
+	 Val. Loss: 0.5351
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.001724
+Training: 100%|████████████████████████████████████| 2132/2132 [07:31<00:00,  4.72it/s]
+Evaluating Loss: 100%|███████████████████████████████| 214/214 [00:10<00:00, 19.58it/s]
+Calculating Accuracy: 100%|██████████████████████████| 214/214 [00:02<00:00, 71.99it/s]
+Epoch: 05 | Time: 7m 45s
+	Train Loss: 0.5647
+	 Val. Loss: 0.5387
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.001724
+Training:  99%|███████████████████████████████████▊| 2120/2132 [07:22<00:02,  4.22it/s]

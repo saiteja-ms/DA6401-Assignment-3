@@ -1,0 +1,17 @@
+Starting training run with config: {'batch_size': 32, 'cell_type': 'rnn', 'clip': 1, 'data_dir': '.', 'decoder_layers': 3, 'dropout': 0, 'embedding_size': 32, 'encoder_layers': 3, 'hidden_size': 64, 'language': 'ta', 'learning_rate': 0.0007966710089988931, 'max_seq_len': 50, 'momentum': 0.9, 'n_epochs': 10, 'optimizer': 'sgd', 'rmsprop_alpha': 0.99, 'scheduler': 'plateau', 'scheduler_factor': 0.5, 'scheduler_patience': 5, 'scheduler_t_max': 20, 'teacher_forcing_ratio': 0.5, 'use_attention': False, 'weight_decay': 0.0001}
+Looking for training file at: .\ta\lexicons\ta.translit.sampled.train.tsv
+Special tokens in vocabulary:
+Source vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'a', 'b', 'c', 'd', 'e', 'f']
+Target vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'ஃ', 'அ', 'ஆ', 'இ', 'ஈ', 'உ']
+Successfully loaded Dakshina dataset for ta
+Train set: 68218 examples
+Dev set: 6827 examples
+Test set: 6864 examples
+Source vocabulary size: 30
+Target vocabulary size: 50
+Max sequence length: 50
+Using device: cuda
+The model has 51,634 trainable parameters
+C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\torch\optim\lr_scheduler.py:62: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+Training:  97%|██████████████████████████████████▉ | 2067/2132 [06:10<00:10,  6.07it/s]

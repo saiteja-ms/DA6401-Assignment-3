@@ -1,0 +1,30 @@
+wandb_version: 1
+
+batch_size:
+  value: 64
+cell_type:
+  value: lstm
+clip:
+  value: 1
+data_dir:
+  value: .
+dropout:
+  value: 0
+embedding_size:
+  value: 128
+hidden_size:
+  value: 256
+language:
+  value: ta
+learning_rate:
+  value: 0.001
+max_seq_len:
+  value: 50
+n_epochs:
+  value: 15
+num_layers:
+  value: 5
+teacher_forcing_ratio:
+  value: 0.5
+use_attention:
+  value: true

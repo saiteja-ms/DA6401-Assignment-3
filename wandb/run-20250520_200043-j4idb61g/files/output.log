@@ -1,0 +1,33 @@
+Starting training run with config: {'batch_size': 32, 'cell_type': 'lstm', 'clip': 1, 'data_dir': '.', 'decoder_layers': 1, 'dropout': 0, 'embedding_size': 64, 'encoder_layers': 1, 'hidden_size': 64, 'language': 'ta', 'learning_rate': 0.000189382163472662, 'max_seq_len': 50, 'momentum': 0, 'n_epochs': 10, 'optimizer': 'rmsprop', 'rmsprop_alpha': 0.99, 'scheduler': 'none', 'scheduler_factor': 0.5, 'scheduler_patience': 5, 'scheduler_t_max': 20, 'teacher_forcing_ratio': 0.7, 'use_attention': False, 'weight_decay': 0}
+Looking for training file at: .\ta\lexicons\ta.translit.sampled.train.tsv
+Special tokens in vocabulary:
+Source vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'a', 'b', 'c', 'd', 'e', 'f']
+Target vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'ஃ', 'அ', 'ஆ', 'இ', 'ஈ', 'உ']
+Successfully loaded Dakshina dataset for ta
+Train set: 68218 examples
+Dev set: 6827 examples
+Test set: 6864 examples
+Source vocabulary size: 30
+Target vocabulary size: 50
+Max sequence length: 50
+Using device: cuda
+The model has 74,930 trainable parameters
+Training: 100%|████████████████████████████████████| 2132/2132 [03:57<00:00,  8.99it/s]
+Evaluating Loss: 100%|███████████████████████████████| 214/214 [00:06<00:00, 33.77it/s]
+Calculating Accuracy: 100%|██████████████████████████| 214/214 [00:02<00:00, 83.15it/s]
+Epoch: 01 | Time: 4m 6s
+	Train Loss: 0.5724
+	 Val. Loss: 0.5492
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.000189
+Saved new best model to best-model-j4idb61g.pt
+Training: 100%|████████████████████████████████████| 2132/2132 [03:57<00:00,  8.99it/s]
+Evaluating Loss: 100%|███████████████████████████████| 214/214 [00:05<00:00, 36.33it/s]
+Calculating Accuracy: 100%|██████████████████████████| 214/214 [00:02<00:00, 76.08it/s]
+Epoch: 02 | Time: 4m 5s
+	Train Loss: 0.5028
+	 Val. Loss: 0.5337
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.000189
+Saved new best model to best-model-j4idb61g.pt
+Training:  17%|██████▏                              | 360/2132 [00:38<03:40,  8.04it/s]

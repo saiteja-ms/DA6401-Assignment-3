@@ -1,0 +1,132 @@
+Starting training run with config: {'batch_size': 64, 'cell_type': 'lstm', 'clip': 1, 'data_dir': '../dakshina_dataset_v1.0', 'decoder_layers': 1, 'dropout': 0, 'embedding_size': 64, 'encoder_layers': 1, 'hidden_size': 256, 'language': 'ta', 'learning_rate': 0.001, 'max_seq_len': 50, 'n_epochs': 15, 'teacher_forcing_ratio': 0.5, 'use_attention': False}
+Attempting to load data from: ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.train.tsv, ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.dev.tsv, ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.test.tsv
+Error: Training file not found at ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.train.tsv
+Current working directory: C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3
+Falling back to creating a small test dataset for debugging.
+Creating a minimal test dataset for debugging...
+Created minimal test dataset with:
+Train set: 2 examples
+Dev set: 1 examples
+Test set: 1 examples
+Source vocabulary size: 15
+Target vocabulary size: 20
+Max sequence length: 50
+Using device: cuda
+The model has 666,836 trainable parameters
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.65it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 19.68it/s]
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 53.62it/s]
+Epoch: 01 | Time: 0m 0s
+	Train Loss: 2.9958
+	 Val. Loss: 2.9957
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-n9cuqusg.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.35it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 18.34it/s]
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 95.40it/s]
+Epoch: 02 | Time: 0m 0s
+	Train Loss: 2.9938
+	 Val. Loss: 2.9956
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-n9cuqusg.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.59it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 18.22it/s]
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 71.14it/s]
+Epoch: 03 | Time: 0m 0s
+	Train Loss: 2.9922
+	 Val. Loss: 2.9956
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-n9cuqusg.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.65it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 19.14it/s]
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 98.21it/s]
+Epoch: 04 | Time: 0m 0s
+	Train Loss: 2.9893
+	 Val. Loss: 2.9956
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.67it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 14.21it/s]
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 97.22it/s]
+Epoch: 05 | Time: 0m 0s
+	Train Loss: 2.9847
+	 Val. Loss: 2.9956
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-n9cuqusg.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.94it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 15.91it/s]
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 67.53it/s]
+Epoch: 06 | Time: 0m 0s
+	Train Loss: 2.9793
+	 Val. Loss: 2.9955
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-n9cuqusg.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.43it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 17.40it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 104.70it/s]
+Epoch: 07 | Time: 0m 0s
+	Train Loss: 2.9718
+	 Val. Loss: 2.9955
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-n9cuqusg.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.46it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 17.84it/s]
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 74.96it/s]
+Epoch: 08 | Time: 0m 0s
+	Train Loss: 2.9624
+	 Val. Loss: 2.9956
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.98it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 18.90it/s]
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 59.40it/s]
+Epoch: 09 | Time: 0m 0s
+	Train Loss: 2.9428
+	 Val. Loss: 2.9962
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.74it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 20.23it/s]
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 93.26it/s]
+Epoch: 10 | Time: 0m 0s
+	Train Loss: 2.9149
+	 Val. Loss: 2.9989
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.51it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 15.44it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 108.05it/s]
+Epoch: 11 | Time: 0m 0s
+	Train Loss: 2.8554
+	 Val. Loss: 3.0328
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.51it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 18.82it/s]
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 88.05it/s]
+Epoch: 12 | Time: 0m 0s
+	Train Loss: 2.6307
+	 Val. Loss: 3.8886
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  6.58it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 19.01it/s]
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 98.53it/s]
+Epoch: 13 | Time: 0m 0s
+	Train Loss: 2.0099
+	 Val. Loss: 4.2572
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.80it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 18.04it/s]
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 54.96it/s]
+Epoch: 14 | Time: 0m 0s
+	Train Loss: 2.0668
+	 Val. Loss: 4.4957
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.62it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 19.33it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 109.25it/s]
+Epoch: 15 | Time: 0m 0s
+	Train Loss: 1.8744
+	 Val. Loss: 4.6779
+	 Val. Accuracy: 0.0000
+Training finished.
+Evaluating best model on test set...
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 16.07it/s]
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 98.95it/s]
+Test Loss: 2.9928 | Test Accuracy: 0.0000
+Saved predictions to predictions/vanilla/predictions-n9cuqusg.json

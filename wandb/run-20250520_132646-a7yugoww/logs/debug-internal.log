@@ -1,0 +1,52 @@
+{"time":"2025-05-20T13:26:46.5430222+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\DELL\\Documents\\SEMESTER 8\\Deep Learning\\Assignment_3\\DA6401-Assignment-3\\wandb\\run-20250520_132646-a7yugoww\\logs\\debug-core.log"}
+{"time":"2025-05-20T13:26:47.1820242+05:30","level":"INFO","msg":"created new stream","id":"a7yugoww"}
+{"time":"2025-05-20T13:26:47.1825693+05:30","level":"INFO","msg":"stream: started","id":"a7yugoww"}
+{"time":"2025-05-20T13:26:47.1825693+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"a7yugoww"}
+{"time":"2025-05-20T13:26:47.1825693+05:30","level":"INFO","msg":"handler: started","stream_id":"a7yugoww"}
+{"time":"2025-05-20T13:26:47.1825693+05:30","level":"INFO","msg":"sender: started","stream_id":"a7yugoww"}
+{"time":"2025-05-20T13:26:47.5069637+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-20T14:48:11.9597802+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/transliteration-seq2seq/a7yugoww/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T14:48:14.1378716+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/transliteration-seq2seq/a7yugoww/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T15:04:16.7569012+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/transliteration-seq2seq/a7yugoww/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T16:56:38.5154565+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/transliteration-seq2seq/a7yugoww/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T16:56:41.3421611+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T16:56:43.7305799+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T16:56:47.8514685+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T16:56:57.0776407+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/transliteration-seq2seq/a7yugoww/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T16:56:57.7596545+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T16:57:16.8884021+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T16:57:32.0469777+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/transliteration-seq2seq/a7yugoww/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T16:57:56.5437912+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T16:58:32.055865+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/transliteration-seq2seq/a7yugoww/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T16:58:56.5552015+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T16:59:32.0839588+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/transliteration-seq2seq/a7yugoww/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T16:59:56.5683619+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T17:00:32.0960579+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/transliteration-seq2seq/a7yugoww/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T17:00:56.5766044+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T17:02:39.9942303+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/transliteration-seq2seq/a7yugoww/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T17:02:39.9942303+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T17:21:19.7555139+05:30","level":"WARN","msg":"runwork: taking a long time","seconds":1427.2348284,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-05-20T17:21:19.7560687+05:30","level":"WARN","msg":"runwork: taking a long time","seconds":1434.0186624,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"127.0.0.1:65425\")"}
+{"time":"2025-05-20T17:21:19.7566106+05:30","level":"WARN","msg":"runwork: taking a long time","seconds":1427.1763087,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-05-20T17:21:19.7566106+05:30","level":"WARN","msg":"sender: taking a long time","seconds":1478.4971989,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true mailbox_slot:\"yw7z2z7d29fx\" connection_id:\"127.0.0.1:65425\")"}
+{"time":"2025-05-20T17:21:19.7732332+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/transliteration-seq2seq/a7yugoww/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T17:21:19.7737814+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T17:33:21.5023141+05:30","level":"WARN","msg":"runwork: taking a long time","seconds":2148.9816291,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-05-20T17:33:21.5023141+05:30","level":"WARN","msg":"runwork: taking a long time","seconds":2155.8013119,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"127.0.0.1:65425\")"}
+{"time":"2025-05-20T17:33:21.5028194+05:30","level":"WARN","msg":"runwork: taking a long time","seconds":2148.9579434,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-05-20T17:33:21.5028194+05:30","level":"WARN","msg":"sender: taking a long time","seconds":2200.2429029,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true mailbox_slot:\"yw7z2z7d29fx\" connection_id:\"127.0.0.1:65425\")"}
+{"time":"2025-05-20T17:33:21.5202239+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T17:33:21.5202239+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/transliteration-seq2seq/a7yugoww/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-20T17:34:22.0358691+05:30","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":2209.5151841,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-05-20T17:34:22.0358691+05:30","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":2209.4914984,"work":"WorkRecord(*service_go_proto.Record_Stats); Control(always_send:true)"}
+{"time":"2025-05-20T17:34:22.0358691+05:30","level":"INFO","msg":"runwork: succeeded after taking longer than expected","seconds":2216.3348669,"work":"WorkRecord(*service_go_proto.Record_OutputRaw); Control(connection_id:\"127.0.0.1:65425\")"}
+{"time":"2025-05-20T17:34:22.0358691+05:30","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":2260.7764579,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true mailbox_slot:\"yw7z2z7d29fx\" connection_id:\"127.0.0.1:65425\")"}
+{"time":"2025-05-20T18:07:48.9121423+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-20T18:07:48.9121423+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-20T18:07:49.9265286+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.326128,"progress":"29.6KB/29.6KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3250485,"progress":"375B/375B"},{"desc":"uploading config.yaml","runtime_seconds":0.0070035,"progress":"1.1KB/1.1KB"}],"total_operations":3}}
+{"time":"2025-05-20T18:07:50.5980484+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-20T18:07:50.9924681+05:30","level":"INFO","msg":"stream: closing","id":"a7yugoww"}
+{"time":"2025-05-20T18:07:50.9929731+05:30","level":"INFO","msg":"handler: closed","stream_id":"a7yugoww"}
+{"time":"2025-05-20T18:07:50.9929731+05:30","level":"INFO","msg":"sender: closed","stream_id":"a7yugoww"}
+{"time":"2025-05-20T18:07:50.9929731+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"a7yugoww"}
+{"time":"2025-05-20T18:07:50.9935177+05:30","level":"INFO","msg":"stream: closed","id":"a7yugoww"}

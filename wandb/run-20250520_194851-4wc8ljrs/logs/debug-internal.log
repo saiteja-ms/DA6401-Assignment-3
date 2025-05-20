@@ -1,0 +1,16 @@
+{"time":"2025-05-20T19:48:51.5607233+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\DELL\\Documents\\SEMESTER 8\\Deep Learning\\Assignment_3\\DA6401-Assignment-3\\wandb\\run-20250520_194851-4wc8ljrs\\logs\\debug-core.log"}
+{"time":"2025-05-20T19:48:52.0879104+05:30","level":"INFO","msg":"created new stream","id":"4wc8ljrs"}
+{"time":"2025-05-20T19:48:52.0879104+05:30","level":"INFO","msg":"stream: started","id":"4wc8ljrs"}
+{"time":"2025-05-20T19:48:52.0879104+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"4wc8ljrs"}
+{"time":"2025-05-20T19:48:52.0879104+05:30","level":"INFO","msg":"sender: started","stream_id":"4wc8ljrs"}
+{"time":"2025-05-20T19:48:52.0879104+05:30","level":"INFO","msg":"handler: started","stream_id":"4wc8ljrs"}
+{"time":"2025-05-20T19:48:52.5019279+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-20T19:50:47.6773349+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-20T19:50:47.6773349+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-20T19:50:48.6852585+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.3157341,"progress":"3.3KB/3.3KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3157341,"progress":"150B/150B"}],"total_operations":2}}
+{"time":"2025-05-20T19:50:49.8691498+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-20T19:50:50.320136+05:30","level":"INFO","msg":"stream: closing","id":"4wc8ljrs"}
+{"time":"2025-05-20T19:50:50.320136+05:30","level":"INFO","msg":"handler: closed","stream_id":"4wc8ljrs"}
+{"time":"2025-05-20T19:50:50.320136+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"4wc8ljrs"}
+{"time":"2025-05-20T19:50:50.320136+05:30","level":"INFO","msg":"sender: closed","stream_id":"4wc8ljrs"}
+{"time":"2025-05-20T19:50:50.3206429+05:30","level":"INFO","msg":"stream: closed","id":"4wc8ljrs"}

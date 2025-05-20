@@ -1,0 +1,30 @@
+2025-05-19 23:54:33,846 INFO    Thread-15 :10488 [wandb_setup.py:_flush():70] Current SDK version is 0.19.11
+2025-05-19 23:54:33,847 INFO    Thread-15 :10488 [wandb_setup.py:_flush():70] Configure stats pid to 10488
+2025-05-19 23:54:33,847 INFO    Thread-15 :10488 [wandb_setup.py:_flush():70] Loading settings from C:\Users\DELL\.config\wandb\settings
+2025-05-19 23:54:33,848 INFO    Thread-15 :10488 [wandb_setup.py:_flush():70] Loading settings from C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\wandb\settings
+2025-05-19 23:54:33,848 INFO    Thread-15 :10488 [wandb_setup.py:_flush():70] Loading settings from environment variables
+2025-05-19 23:54:33,849 INFO    Thread-15 :10488 [wandb_init.py:setup_run_log_directory():724] Logging user logs to C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\wandb\run-20250519_235433-bwmpd0f8\logs\debug.log
+2025-05-19 23:54:33,850 INFO    Thread-15 :10488 [wandb_init.py:setup_run_log_directory():725] Logging internal logs to C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\wandb\run-20250519_235433-bwmpd0f8\logs\debug-internal.log
+2025-05-19 23:54:33,850 INFO    Thread-15 :10488 [wandb_init.py:init():852] calling init triggers
+2025-05-19 23:54:33,851 INFO    Thread-15 :10488 [wandb_init.py:init():857] wandb.init called with sweep_config: {'batch_size': 64, 'cell_type': 'gru', 'clip': 1, 'data_dir': '.', 'decoder_layers': 2, 'dropout': 0.2, 'embedding_size': 128, 'encoder_layers': 2, 'hidden_size': 128, 'language': 'ta', 'learning_rate': 0.001, 'max_seq_len': 50, 'n_epochs': 15, 'teacher_forcing_ratio': 0.5, 'use_attention': True}
+config: {'_wandb': {}}
+2025-05-19 23:54:33,851 INFO    Thread-15 :10488 [wandb_init.py:init():893] starting backend
+2025-05-19 23:54:33,851 INFO    Thread-15 :10488 [wandb_init.py:init():897] sending inform_init request
+2025-05-19 23:54:33,861 INFO    Thread-15 :10488 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-05-19 23:54:33,862 INFO    Thread-15 :10488 [wandb_init.py:init():907] backend started and connected
+2025-05-19 23:54:33,865 INFO    Thread-15 :10488 [wandb_run.py:_config_callback():1436] config_cb None None {'batch_size': 64, 'cell_type': 'gru', 'clip': 1, 'data_dir': '.', 'decoder_layers': 2, 'dropout': 0.2, 'embedding_size': 128, 'encoder_layers': 2, 'hidden_size': 128, 'language': 'ta', 'learning_rate': 0.001, 'max_seq_len': 50, 'n_epochs': 15, 'teacher_forcing_ratio': 0.5, 'use_attention': True}
+2025-05-19 23:54:33,868 INFO    Thread-15 :10488 [wandb_init.py:init():1005] updated telemetry
+2025-05-19 23:54:33,960 INFO    Thread-15 :10488 [wandb_init.py:init():1029] communicating run to backend with 90.0 second timeout
+2025-05-19 23:54:34,843 INFO    Thread-15 :10488 [wandb_init.py:init():1104] starting run threads in backend
+2025-05-19 23:54:35,399 INFO    Thread-15 :10488 [wandb_run.py:_console_start():2573] atexit reg
+2025-05-19 23:54:35,399 INFO    Thread-15 :10488 [wandb_run.py:_redirect():2421] redirect: wrap_raw
+2025-05-19 23:54:35,400 INFO    Thread-15 :10488 [wandb_run.py:_redirect():2490] Wrapping output streams.
+2025-05-19 23:54:35,400 INFO    Thread-15 :10488 [wandb_run.py:_redirect():2513] Redirects installed.
+2025-05-19 23:54:35,401 INFO    Thread-15 :10488 [wandb_init.py:init():1150] run started, returning control to user process
+2025-05-19 23:54:36,127 INFO    Thread-15 :10488 [wandb_run.py:_finish():2321] finishing run teja_sai-indian-institute-of-technology-madras/transliteration-seq2seq/bwmpd0f8
+2025-05-19 23:54:36,127 INFO    Thread-15 :10488 [wandb_run.py:_atexit_cleanup():2538] got exitcode: 1
+2025-05-19 23:54:36,127 INFO    Thread-15 :10488 [wandb_run.py:_restore():2520] restore
+2025-05-19 23:54:36,128 INFO    Thread-15 :10488 [wandb_run.py:_restore():2526] restore done
+2025-05-19 23:54:37,771 INFO    Thread-15 :10488 [wandb_run.py:_footer_history_summary_info():4188] rendering history
+2025-05-19 23:54:37,772 INFO    Thread-15 :10488 [wandb_run.py:_footer_history_summary_info():4220] rendering summary
+2025-05-19 23:54:37,773 INFO    Thread-15 :10488 [wandb_run.py:_footer_sync_info():4149] logging synced files

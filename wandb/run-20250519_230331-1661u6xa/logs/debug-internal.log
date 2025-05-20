@@ -1,0 +1,7 @@
+{"time":"2025-05-19T23:03:31.1516474+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\DELL\\Documents\\SEMESTER 8\\Deep Learning\\Assignment_3\\DA6401-Assignment-3\\wandb\\run-20250519_230331-1661u6xa\\logs\\debug-core.log"}
+{"time":"2025-05-19T23:03:31.7908218+05:30","level":"INFO","msg":"created new stream","id":"1661u6xa"}
+{"time":"2025-05-19T23:03:31.791357+05:30","level":"INFO","msg":"handler: started","stream_id":"1661u6xa"}
+{"time":"2025-05-19T23:03:31.791357+05:30","level":"INFO","msg":"stream: started","id":"1661u6xa"}
+{"time":"2025-05-19T23:03:31.791357+05:30","level":"INFO","msg":"sender: started","stream_id":"1661u6xa"}
+{"time":"2025-05-19T23:03:31.791357+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"1661u6xa"}
+{"time":"2025-05-19T23:03:32.1338803+05:30","level":"INFO","msg":"Starting system monitor"}

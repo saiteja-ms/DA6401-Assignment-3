@@ -34,7 +34,8 @@ class Decoder(nn.Module):
                 hidden_size, 
                 num_layers=num_layers, 
                 dropout=dropout if num_layers > 1 else 0,
-                batch_first=True
+                batch_first=True,
+                nonlinearity='tanh'  # Explicitly set to tanh for vanilla RNN
             )
             
         self.fc = nn.Linear(hidden_size, output_size)

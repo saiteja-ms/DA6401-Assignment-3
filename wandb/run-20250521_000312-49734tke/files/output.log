@@ -1,0 +1,24 @@
+Starting analysis run: 49734tke
+
+Analyzing Vanilla Model Run ID: 5uohi6xg
+Error: Predictions file not found at predictions/vanilla/predictions-5uohi6xg.json
+
+Analyzing Attention Model Run ID: 32i27dqx
+Error: Predictions file not found at predictions/attention/predictions-32i27dqx.json
+
+Comparing Vanilla (5uohi6xg) vs Attention (32i27dqx) models
+Error: Neither prediction file found: predictions/vanilla/predictions-5uohi6xg.json, predictions/attention/predictions-32i27dqx.json
+
+Attempting to load model 32i27dqx for visualization...
+Looking for training file at: .\ta\lexicons\ta.translit.sampled.train.tsv
+Special tokens in vocabulary:
+Source vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'a', 'b', 'c', 'd', 'e', 'f']
+Target vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'ஃ', 'அ', 'ஆ', 'இ', 'ஈ', 'உ']
+Successfully loaded Dakshina dataset for ta
+Train set: 68218 examples
+Dev set: 6827 examples
+Test set: 6864 examples
+Source vocabulary size: 30
+Target vocabulary size: 50
+Max sequence length: 50
+Model file not found at best-model-32i27dqx.pt. Cannot generate visualizations.

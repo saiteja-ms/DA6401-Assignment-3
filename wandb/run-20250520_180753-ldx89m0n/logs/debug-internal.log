@@ -1,0 +1,17 @@
+{"time":"2025-05-20T18:07:54.0313049+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\DELL\\Documents\\SEMESTER 8\\Deep Learning\\Assignment_3\\DA6401-Assignment-3\\wandb\\run-20250520_180753-ldx89m0n\\logs\\debug-core.log"}
+{"time":"2025-05-20T18:07:54.5359245+05:30","level":"INFO","msg":"created new stream","id":"ldx89m0n"}
+{"time":"2025-05-20T18:07:54.5359245+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"ldx89m0n"}
+{"time":"2025-05-20T18:07:54.5359245+05:30","level":"INFO","msg":"handler: started","stream_id":"ldx89m0n"}
+{"time":"2025-05-20T18:07:54.5359245+05:30","level":"INFO","msg":"stream: started","id":"ldx89m0n"}
+{"time":"2025-05-20T18:07:54.5359245+05:30","level":"INFO","msg":"sender: started","stream_id":"ldx89m0n"}
+{"time":"2025-05-20T18:07:54.8903573+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-20T18:51:44.9190564+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/transliteration-seq2seq/ldx89m0n/file_stream\": dial tcp [64:ff9b::23ba:e431]:443: connectex: A socket operation was attempted to an unreachable host."}
+{"time":"2025-05-20T19:08:42.8437498+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-20T19:08:42.8444032+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-20T19:08:43.8580856+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.3370968,"progress":"18.0KB/18.0KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3364488,"progress":"373B/373B"}],"total_operations":2}}
+{"time":"2025-05-20T19:08:44.4061569+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-20T19:08:44.8544807+05:30","level":"INFO","msg":"stream: closing","id":"ldx89m0n"}
+{"time":"2025-05-20T19:08:44.8544807+05:30","level":"INFO","msg":"sender: closed","stream_id":"ldx89m0n"}
+{"time":"2025-05-20T19:08:44.8544807+05:30","level":"INFO","msg":"handler: closed","stream_id":"ldx89m0n"}
+{"time":"2025-05-20T19:08:44.8544807+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"ldx89m0n"}
+{"time":"2025-05-20T19:08:44.8544807+05:30","level":"INFO","msg":"stream: closed","id":"ldx89m0n"}

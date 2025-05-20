@@ -1,0 +1,132 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Connectivity Visualization</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1 { text-align: center; }
+            .example { margin-bottom: 40px; border: 1px solid #ccc; padding: 20px; border-radius: 10px; }
+            .title { font-weight: bold; margin-bottom: 10px; font-size: 18px; }
+            .correct { color: green; }
+            .incorrect { color: red; }
+            .container { position: relative; height: 200px; margin: 20px 0; }
+            .source-chars { position: absolute; bottom: 0; width: 100%; display: flex; justify-content: space-around; }
+            .target-chars { position: absolute; top: 0; width: 100%; display: flex; justify-content: space-around; }
+            .char-box { padding: 10px; border-radius: 5px; }
+            .source-char { background-color: lightblue; }
+            .target-char { background-color: lightgreen; }
+            svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+            .strong-line { stroke: red; stroke-width: 2; }
+            .weak-line { stroke: blue; stroke-opacity: 0.3; stroke-width: 1; }
+        </style>
+    </head>
+    <body>
+        <h1>Connectivity Visualization</h1>
+    
+        <div class="example">
+            <div class="title incorrect">
+                ✗ Example 1: redar → ரேடர் (Target: ரேடார்)
+            </div>
+            <div class="container" id="container-0">
+                <div class="source-chars">
+        <div class="char-box source-char" id="source-0-0">r</div><div class="char-box source-char" id="source-0-1">e</div><div class="char-box source-char" id="source-0-2">d</div><div class="char-box source-char" id="source-0-3">a</div><div class="char-box source-char" id="source-0-4">r</div>
+                </div>
+                <div class="target-chars">
+        <div class="char-box target-char" id="target-0-0">ர</div><div class="char-box target-char" id="target-0-1">ே</div><div class="char-box target-char" id="target-0-2">ட</div><div class="char-box target-char" id="target-0-3">ர</div><div class="char-box target-char" id="target-0-4">்</div>
+                </div>
+                <svg>
+        <line x1="10.0%" y1="80%" x2="10.0%" y2="20%" class="strong-line" /><line x1="30.0%" y1="80%" x2="10.0%" y2="20%" class="weak-line" style="stroke-opacity: 0.20765385627746583" /><line x1="30.0%" y1="80%" x2="30.0%" y2="20%" class="strong-line" /><line x1="50.0%" y1="80%" x2="30.0%" y2="20%" class="weak-line" style="stroke-opacity: 0.16605499982833863" /><line x1="70.0%" y1="80%" x2="30.0%" y2="20%" class="weak-line" style="stroke-opacity: 0.1848836421966553" /><line x1="70.0%" y1="80%" x2="50.0%" y2="20%" class="strong-line" /><line x1="50.0%" y1="80%" x2="50.0%" y2="20%" class="weak-line" style="stroke-opacity: 0.09997027516365052" /><line x1="90.0%" y1="80%" x2="70.0%" y2="20%" class="strong-line" /><line x1="110.00000000000001%" y1="80%" x2="70.0%" y2="20%" class="weak-line" style="stroke-opacity: 0.1481204628944397" /><line x1="110.00000000000001%" y1="80%" x2="90.0%" y2="20%" class="strong-line" /><line x1="70.0%" y1="80%" x2="90.0%" y2="20%" class="weak-line" style="stroke-opacity: 0.2156019449234009" /><line x1="90.0%" y1="80%" x2="90.0%" y2="20%" class="weak-line" style="stroke-opacity: 0.133502733707428" />
+                </svg>
+            </div>
+        </div>
+        
+        <div class="example">
+            <div class="title incorrect">
+                ✗ Example 2: boogey → போக்கி (Target: போகி)
+            </div>
+            <div class="container" id="container-1">
+                <div class="source-chars">
+        <div class="char-box source-char" id="source-1-0">b</div><div class="char-box source-char" id="source-1-1">o</div><div class="char-box source-char" id="source-1-2">o</div><div class="char-box source-char" id="source-1-3">g</div><div class="char-box source-char" id="source-1-4">e</div><div class="char-box source-char" id="source-1-5">y</div>
+                </div>
+                <div class="target-chars">
+        <div class="char-box target-char" id="target-1-0">ப</div><div class="char-box target-char" id="target-1-1">ோ</div><div class="char-box target-char" id="target-1-2">க</div><div class="char-box target-char" id="target-1-3">்</div><div class="char-box target-char" id="target-1-4">க</div><div class="char-box target-char" id="target-1-5">ி</div>
+                </div>
+                <svg>
+        <line x1="25.0%" y1="80%" x2="8.333333333333332%" y2="20%" class="strong-line" /><line x1="8.333333333333332%" y1="80%" x2="8.333333333333332%" y2="20%" class="weak-line" style="stroke-opacity: 0.32611722946166993" /><line x1="58.333333333333336%" y1="80%" x2="25.0%" y2="20%" class="strong-line" /><line x1="41.66666666666667%" y1="80%" x2="25.0%" y2="20%" class="weak-line" style="stroke-opacity: 0.13605831861495973" /><line x1="75.0%" y1="80%" x2="41.66666666666667%" y2="20%" class="strong-line" /><line x1="58.333333333333336%" y1="80%" x2="41.66666666666667%" y2="20%" class="weak-line" style="stroke-opacity: 0.1771478891372681" /><line x1="108.33333333333333%" y1="80%" x2="58.333333333333336%" y2="20%" class="strong-line" /><line x1="75.0%" y1="80%" x2="58.333333333333336%" y2="20%" class="weak-line" style="stroke-opacity: 0.15726474523544312" /><line x1="91.66666666666666%" y1="80%" x2="58.333333333333336%" y2="20%" class="weak-line" style="stroke-opacity: 0.2101318359375" /><line x1="125.0%" y1="80%" x2="58.333333333333336%" y2="20%" class="weak-line" style="stroke-opacity: 0.09976069927215576" /><line x1="108.33333333333333%" y1="80%" x2="75.0%" y2="20%" class="strong-line" /><line x1="75.0%" y1="80%" x2="75.0%" y2="20%" class="weak-line" style="stroke-opacity: 0.27303190231323243" /><line x1="91.66666666666666%" y1="80%" x2="75.0%" y2="20%" class="weak-line" style="stroke-opacity: 0.1208967924118042" /><line x1="125.0%" y1="80%" x2="75.0%" y2="20%" class="weak-line" style="stroke-opacity: 0.08156954646110536" /><line x1="108.33333333333333%" y1="80%" x2="91.66666666666666%" y2="20%" class="strong-line" /><line x1="91.66666666666666%" y1="80%" x2="91.66666666666666%" y2="20%" class="weak-line" style="stroke-opacity: 0.21586468219757082" /><line x1="125.0%" y1="80%" x2="91.66666666666666%" y2="20%" class="weak-line" style="stroke-opacity: 0.1358128070831299" />
+                </svg>
+            </div>
+        </div>
+        
+        <div class="example">
+            <div class="title correct">
+                ✓ Example 3: mudippu → முடிப்பு (Target: முடிப்பு)
+            </div>
+            <div class="container" id="container-2">
+                <div class="source-chars">
+        <div class="char-box source-char" id="source-2-0">m</div><div class="char-box source-char" id="source-2-1">u</div><div class="char-box source-char" id="source-2-2">d</div><div class="char-box source-char" id="source-2-3">i</div><div class="char-box source-char" id="source-2-4">p</div><div class="char-box source-char" id="source-2-5">p</div><div class="char-box source-char" id="source-2-6">u</div>
+                </div>
+                <div class="target-chars">
+        <div class="char-box target-char" id="target-2-0">ம</div><div class="char-box target-char" id="target-2-1">ு</div><div class="char-box target-char" id="target-2-2">ட</div><div class="char-box target-char" id="target-2-3">ி</div><div class="char-box target-char" id="target-2-4">ப</div><div class="char-box target-char" id="target-2-5">்</div><div class="char-box target-char" id="target-2-6">ப</div><div class="char-box target-char" id="target-2-7">ு</div>
+                </div>
+                <svg>
+        <line x1="21.428571428571427%" y1="80%" x2="6.25%" y2="20%" class="strong-line" /><line x1="7.142857142857142%" y1="80%" x2="6.25%" y2="20%" class="weak-line" style="stroke-opacity: 0.23052396774291994" /><line x1="50.0%" y1="80%" x2="6.25%" y2="20%" class="weak-line" style="stroke-opacity: 0.09115812182426453" /><line x1="35.714285714285715%" y1="80%" x2="18.75%" y2="20%" class="strong-line" /><line x1="21.428571428571427%" y1="80%" x2="18.75%" y2="20%" class="weak-line" style="stroke-opacity: 0.1356775164604187" /><line x1="50.0%" y1="80%" x2="18.75%" y2="20%" class="weak-line" style="stroke-opacity: 0.1564351558685303" /><line x1="50.0%" y1="80%" x2="31.25%" y2="20%" class="strong-line" /><line x1="64.28571428571429%" y1="80%" x2="43.75%" y2="20%" class="strong-line" /><line x1="50.0%" y1="80%" x2="43.75%" y2="20%" class="weak-line" style="stroke-opacity: 0.15607033967971803" /><line x1="78.57142857142857%" y1="80%" x2="56.25%" y2="20%" class="strong-line" /><line x1="64.28571428571429%" y1="80%" x2="56.25%" y2="20%" class="weak-line" style="stroke-opacity: 0.24915399551391604" /><line x1="78.57142857142857%" y1="80%" x2="68.75%" y2="20%" class="strong-line" /><line x1="92.85714285714286%" y1="80%" x2="68.75%" y2="20%" class="weak-line" style="stroke-opacity: 0.09059263467788697" /><line x1="107.14285714285714%" y1="80%" x2="68.75%" y2="20%" class="weak-line" style="stroke-opacity: 0.14420002698898315" /><line x1="121.42857142857142%" y1="80%" x2="68.75%" y2="20%" class="weak-line" style="stroke-opacity: 0.1017823338508606" /><line x1="78.57142857142857%" y1="80%" x2="81.25%" y2="20%" class="strong-line" /><line x1="92.85714285714286%" y1="80%" x2="81.25%" y2="20%" class="weak-line" style="stroke-opacity: 0.18618787527084352" /><line x1="107.14285714285714%" y1="80%" x2="81.25%" y2="20%" class="weak-line" style="stroke-opacity: 0.1418970823287964" /><line x1="121.42857142857142%" y1="80%" x2="81.25%" y2="20%" class="weak-line" style="stroke-opacity: 0.12921308279037477" /><line x1="107.14285714285714%" y1="80%" x2="93.75%" y2="20%" class="strong-line" /><line x1="121.42857142857142%" y1="80%" x2="93.75%" y2="20%" class="weak-line" style="stroke-opacity: 0.15036528110504152" />
+                </svg>
+            </div>
+        </div>
+        
+        <div class="example">
+            <div class="title correct">
+                ✓ Example 4: thambathikal → தம்பதிகள் (Target: தம்பதிகள்)
+            </div>
+            <div class="container" id="container-3">
+                <div class="source-chars">
+        <div class="char-box source-char" id="source-3-0">t</div><div class="char-box source-char" id="source-3-1">h</div><div class="char-box source-char" id="source-3-2">a</div><div class="char-box source-char" id="source-3-3">m</div><div class="char-box source-char" id="source-3-4">b</div><div class="char-box source-char" id="source-3-5">a</div><div class="char-box source-char" id="source-3-6">t</div><div class="char-box source-char" id="source-3-7">h</div><div class="char-box source-char" id="source-3-8">i</div><div class="char-box source-char" id="source-3-9">k</div><div class="char-box source-char" id="source-3-10">a</div><div class="char-box source-char" id="source-3-11">l</div>
+                </div>
+                <div class="target-chars">
+        <div class="char-box target-char" id="target-3-0">த</div><div class="char-box target-char" id="target-3-1">ம</div><div class="char-box target-char" id="target-3-2">்</div><div class="char-box target-char" id="target-3-3">ப</div><div class="char-box target-char" id="target-3-4">த</div><div class="char-box target-char" id="target-3-5">ி</div><div class="char-box target-char" id="target-3-6">க</div><div class="char-box target-char" id="target-3-7">ள</div><div class="char-box target-char" id="target-3-8">்</div>
+                </div>
+                <svg>
+        <line x1="12.5%" y1="80%" x2="5.555555555555555%" y2="20%" class="strong-line" /><line x1="4.166666666666666%" y1="80%" x2="5.555555555555555%" y2="20%" class="weak-line" style="stroke-opacity: 0.17610865831375122" /><line x1="20.833333333333336%" y1="80%" x2="5.555555555555555%" y2="20%" class="weak-line" style="stroke-opacity: 0.1695271968841553" /><line x1="29.166666666666668%" y1="80%" x2="16.666666666666664%" y2="20%" class="strong-line" /><line x1="37.5%" y1="80%" x2="16.666666666666664%" y2="20%" class="weak-line" style="stroke-opacity: 0.3043104410171509" /><line x1="37.5%" y1="80%" x2="27.77777777777778%" y2="20%" class="strong-line" /><line x1="45.83333333333333%" y1="80%" x2="38.88888888888889%" y2="20%" class="strong-line" /><line x1="37.5%" y1="80%" x2="38.88888888888889%" y2="20%" class="weak-line" style="stroke-opacity: 0.1608362913131714" /><line x1="62.5%" y1="80%" x2="50.0%" y2="20%" class="strong-line" /><line x1="54.166666666666664%" y1="80%" x2="50.0%" y2="20%" class="weak-line" style="stroke-opacity: 0.2569694519042969" /><line x1="79.16666666666666%" y1="80%" x2="61.111111111111114%" y2="20%" class="strong-line" /><line x1="70.83333333333334%" y1="80%" x2="61.111111111111114%" y2="20%" class="weak-line" style="stroke-opacity: 0.17457500696182252" /><line x1="79.16666666666666%" y1="80%" x2="72.22222222222221%" y2="20%" class="strong-line" /><line x1="87.5%" y1="80%" x2="72.22222222222221%" y2="20%" class="weak-line" style="stroke-opacity: 0.2733050346374512" /><line x1="95.83333333333334%" y1="80%" x2="72.22222222222221%" y2="20%" class="weak-line" style="stroke-opacity: 0.08943240046501161" /><line x1="104.16666666666667%" y1="80%" x2="72.22222222222221%" y2="20%" class="weak-line" style="stroke-opacity: 0.10947648286819459" /><line x1="95.83333333333334%" y1="80%" x2="83.33333333333334%" y2="20%" class="strong-line" /><line x1="104.16666666666667%" y1="80%" x2="83.33333333333334%" y2="20%" class="weak-line" style="stroke-opacity: 0.17217878103256226" /><line x1="104.16666666666667%" y1="80%" x2="94.44444444444444%" y2="20%" class="strong-line" />
+                </svg>
+            </div>
+        </div>
+        
+        <div class="example">
+            <div class="title correct">
+                ✓ Example 5: kadambur → கடம்பூர் (Target: கடம்பூர்)
+            </div>
+            <div class="container" id="container-4">
+                <div class="source-chars">
+        <div class="char-box source-char" id="source-4-0">k</div><div class="char-box source-char" id="source-4-1">a</div><div class="char-box source-char" id="source-4-2">d</div><div class="char-box source-char" id="source-4-3">a</div><div class="char-box source-char" id="source-4-4">m</div><div class="char-box source-char" id="source-4-5">b</div><div class="char-box source-char" id="source-4-6">u</div><div class="char-box source-char" id="source-4-7">r</div>
+                </div>
+                <div class="target-chars">
+        <div class="char-box target-char" id="target-4-0">க</div><div class="char-box target-char" id="target-4-1">ட</div><div class="char-box target-char" id="target-4-2">ம</div><div class="char-box target-char" id="target-4-3">்</div><div class="char-box target-char" id="target-4-4">ப</div><div class="char-box target-char" id="target-4-5">ூ</div><div class="char-box target-char" id="target-4-6">ர</div><div class="char-box target-char" id="target-4-7">்</div>
+                </div>
+                <svg>
+        <line x1="6.25%" y1="80%" x2="6.25%" y2="20%" class="strong-line" /><line x1="18.75%" y1="80%" x2="6.25%" y2="20%" class="weak-line" style="stroke-opacity: 0.2106865644454956" /><line x1="43.75%" y1="80%" x2="18.75%" y2="20%" class="strong-line" /><line x1="31.25%" y1="80%" x2="18.75%" y2="20%" class="weak-line" style="stroke-opacity: 0.17116583585739137" /><line x1="56.25%" y1="80%" x2="31.25%" y2="20%" class="strong-line" /><line x1="68.75%" y1="80%" x2="31.25%" y2="20%" class="weak-line" style="stroke-opacity: 0.09576271772384644" /><line x1="68.75%" y1="80%" x2="43.75%" y2="20%" class="strong-line" /><line x1="81.25%" y1="80%" x2="56.25%" y2="20%" class="strong-line" /><line x1="68.75%" y1="80%" x2="56.25%" y2="20%" class="weak-line" style="stroke-opacity: 0.24773364067077638" /><line x1="93.75%" y1="80%" x2="56.25%" y2="20%" class="weak-line" style="stroke-opacity: 0.1162145495414734" /><line x1="93.75%" y1="80%" x2="68.75%" y2="20%" class="strong-line" /><line x1="81.25%" y1="80%" x2="68.75%" y2="20%" class="weak-line" style="stroke-opacity: 0.15726001262664796" /><line x1="106.25%" y1="80%" x2="68.75%" y2="20%" class="weak-line" style="stroke-opacity: 0.11902098655700684" /><line x1="106.25%" y1="80%" x2="81.25%" y2="20%" class="strong-line" /><line x1="93.75%" y1="80%" x2="81.25%" y2="20%" class="weak-line" style="stroke-opacity: 0.3252433776855469" /><line x1="106.25%" y1="80%" x2="93.75%" y2="20%" class="strong-line" /><line x1="118.75%" y1="80%" x2="93.75%" y2="20%" class="weak-line" style="stroke-opacity: 0.14913015365600588" />
+                </svg>
+            </div>
+        </div>
+        
+        <div class="example">
+            <div class="title correct">
+                ✓ Example 6: poalath → போலத் (Target: போலத்)
+            </div>
+            <div class="container" id="container-5">
+                <div class="source-chars">
+        <div class="char-box source-char" id="source-5-0">p</div><div class="char-box source-char" id="source-5-1">o</div><div class="char-box source-char" id="source-5-2">a</div><div class="char-box source-char" id="source-5-3">l</div><div class="char-box source-char" id="source-5-4">a</div><div class="char-box source-char" id="source-5-5">t</div><div class="char-box source-char" id="source-5-6">h</div>
+                </div>
+                <div class="target-chars">
+        <div class="char-box target-char" id="target-5-0">ப</div><div class="char-box target-char" id="target-5-1">ோ</div><div class="char-box target-char" id="target-5-2">ல</div><div class="char-box target-char" id="target-5-3">த</div><div class="char-box target-char" id="target-5-4">்</div>
+                </div>
+                <svg>
+        <line x1="7.142857142857142%" y1="80%" x2="10.0%" y2="20%" class="strong-line" /><line x1="21.428571428571427%" y1="80%" x2="10.0%" y2="20%" class="weak-line" style="stroke-opacity: 0.14856878519058228" /><line x1="35.714285714285715%" y1="80%" x2="30.0%" y2="20%" class="strong-line" /><line x1="50.0%" y1="80%" x2="30.0%" y2="20%" class="weak-line" style="stroke-opacity: 0.1552246689796448" /><line x1="50.0%" y1="80%" x2="50.0%" y2="20%" class="strong-line" /><line x1="64.28571428571429%" y1="80%" x2="50.0%" y2="20%" class="weak-line" style="stroke-opacity: 0.32139408588409424" /><line x1="78.57142857142857%" y1="80%" x2="70.0%" y2="20%" class="strong-line" /><line x1="92.85714285714286%" y1="80%" x2="70.0%" y2="20%" class="weak-line" style="stroke-opacity: 0.2513676404953003" /><line x1="107.14285714285714%" y1="80%" x2="90.0%" y2="20%" class="strong-line" /><line x1="92.85714285714286%" y1="80%" x2="90.0%" y2="20%" class="weak-line" style="stroke-opacity: 0.11873669624328614" />
+                </svg>
+            </div>
+        </div>
+        
+    </body>
+    </html>
+    

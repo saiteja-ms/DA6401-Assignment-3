@@ -1,0 +1,18 @@
+Actual wandb run name: crisp-sweep-4
+Starting training run with config: {'batch_size': 32, 'cell_type': 'rnn', 'clip': 1, 'data_dir': '.', 'decoder_layers': 3, 'dropout': 0.2, 'embedding_size': 64, 'encoder_layers': 1, 'hidden_size': 256, 'language': 'ta', 'learning_rate': 0.0012538326576978643, 'max_seq_len': 50, 'momentum': 0, 'n_epochs': 10, 'optimizer': 'sgd', 'rmsprop_alpha': 0.99, 'scheduler': 'cosine', 'scheduler_factor': 0.5, 'scheduler_patience': 5, 'scheduler_t_max': 20, 'teacher_forcing_ratio': 0.7, 'use_attention': False, 'weight_decay': 0.001}
+Looking for training file at: .\ta\lexicons\ta.translit.sampled.train.tsv
+Special tokens in vocabulary:
+Source vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'a', 'b', 'c', 'd', 'e', 'f']
+Target vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'ஃ', 'அ', 'ஆ', 'இ', 'ஈ', 'உ']
+Successfully loaded Dakshina dataset for ta
+Train set: 68218 examples
+Dev set: 6827 examples
+Test set: 6864 examples
+Source vocabulary size: 30
+Target vocabulary size: 50
+Max sequence length: 50
+Using device: cuda
+The model has 446,002 trainable parameters
+Training: 100%|████████████████████████████████████| 2132/2132 [07:39<00:00,  4.64it/s]
+Evaluating Loss: 100%|███████████████████████████████| 214/214 [00:11<00:00, 18.37it/s]
+Calculating Accuracy:   0%|                                    | 0/214 [00:00<?, ?it/s]

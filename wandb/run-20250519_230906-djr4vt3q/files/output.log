@@ -1,0 +1,402 @@
+Starting training run with config: {'language': 'ta', 'embedding_size': 64, 'hidden_size': 128, 'encoder_layers': 1, 'decoder_layers': 1, 'cell_type': 'lstm', 'dropout': 0.2, 'learning_rate': 0.001, 'batch_size': 64, 'n_epochs': 20, 'clip': 1.0, 'teacher_forcing_ratio': 0.5, 'use_attention': False, 'data_dir': '../dakshina_dataset_v1.0', 'max_seq_len': 50}
+Attempting to load data from: ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.train.tsv, ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.dev.tsv, ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.test.tsv
+Error: Training file not found at ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.train.tsv
+Current working directory: C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3
+Falling back to creating a small test dataset for debugging.
+Creating a minimal test dataset for debugging...
+Created minimal test dataset with:
+Train set: 2 examples
+Dev set: 1 examples
+Test set: 1 examples
+Source vocabulary size: 15
+Target vocabulary size: 20
+Max sequence length: 50
+Using device: cuda
+The model has 203,476 trainable parameters
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  1.31it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 29.54it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 166.53it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: ல
+Target text: சோதனை
+Match: False
+Epoch: 01 | Time: 0m 0s
+	Train Loss: 2.9957
+	 Val. Loss: 2.9957
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-djr4vt3q.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00, 12.00it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 44.71it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 215.66it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: ல
+Target text: சோதனை
+Match: False
+Epoch: 02 | Time: 0m 0s
+	Train Loss: 2.9944
+	 Val. Loss: 2.9956
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-djr4vt3q.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00, 11.25it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 43.40it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 237.11it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: ல
+Target text: சோதனை
+Match: False
+Epoch: 03 | Time: 0m 0s
+	Train Loss: 2.9925
+	 Val. Loss: 2.9955
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-djr4vt3q.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00, 11.42it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 40.49it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 229.90it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: ல
+Target text: சோதனை
+Match: False
+Epoch: 04 | Time: 0m 0s
+	Train Loss: 2.9905
+	 Val. Loss: 2.9954
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-djr4vt3q.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  9.84it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 27.65it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 193.82it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: ல
+Target text: சோதனை
+Match: False
+Epoch: 05 | Time: 0m 0s
+	Train Loss: 2.9879
+	 Val. Loss: 2.9954
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-djr4vt3q.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00, 10.62it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 43.23it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 233.43it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: ல
+Target text: சோதனை
+Match: False
+Epoch: 06 | Time: 0m 0s
+	Train Loss: 2.9857
+	 Val. Loss: 2.9953
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-djr4vt3q.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00, 11.40it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 40.42it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 190.55it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: ல
+Target text: சோதனை
+Match: False
+Epoch: 07 | Time: 0m 0s
+	Train Loss: 2.9816
+	 Val. Loss: 2.9952
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-djr4vt3q.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00, 11.55it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 42.85it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 207.60it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: ல
+Target text: சோதனை
+Match: False
+Epoch: 08 | Time: 0m 0s
+	Train Loss: 2.9770
+	 Val. Loss: 2.9951
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-djr4vt3q.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00, 11.07it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 32.51it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 184.51it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: ல
+Target text: சோதனை
+Match: False
+Epoch: 09 | Time: 0m 0s
+	Train Loss: 2.9720
+	 Val. Loss: 2.9949
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-djr4vt3q.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00, 12.26it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 43.38it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 189.15it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: ல
+Target text: சோதனை
+Match: False
+Epoch: 10 | Time: 0m 0s
+	Train Loss: 2.9676
+	 Val. Loss: 2.9948
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-djr4vt3q.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00, 11.56it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 43.33it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 228.91it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: ல
+Target text: சோதனை
+Match: False
+Epoch: 11 | Time: 0m 0s
+	Train Loss: 2.9571
+	 Val. Loss: 2.9948
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-djr4vt3q.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00, 11.83it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 36.89it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 227.33it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: ல
+Target text: சோதனை
+Match: False
+Epoch: 12 | Time: 0m 0s
+	Train Loss: 2.9498
+	 Val. Loss: 2.9948
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-djr4vt3q.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00, 12.19it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 26.21it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 196.57it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text:
+Target text: சோதனை
+Match: False
+Epoch: 13 | Time: 0m 0s
+	Train Loss: 2.9364
+	 Val. Loss: 2.9949
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00, 10.98it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 39.68it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 193.28it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text:
+Target text: சோதனை
+Match: False
+Epoch: 14 | Time: 0m 0s
+	Train Loss: 2.9182
+	 Val. Loss: 2.9954
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00, 10.65it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 37.84it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 227.95it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text:
+Target text: சோதனை
+Match: False
+Epoch: 15 | Time: 0m 0s
+	Train Loss: 2.8873
+	 Val. Loss: 2.9969
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00, 11.72it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 38.79it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 172.60it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: ல
+Target text: சோதனை
+Match: False
+Epoch: 16 | Time: 0m 0s
+	Train Loss: 2.8540
+	 Val. Loss: 3.0015
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  9.32it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 37.39it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 184.57it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: ல
+Target text: சோதனை
+Match: False
+Epoch: 17 | Time: 0m 0s
+	Train Loss: 2.7869
+	 Val. Loss: 3.0244
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00, 10.18it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 37.03it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 184.59it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: ல
+Target text: சோதனை
+Match: False
+Epoch: 18 | Time: 0m 0s
+	Train Loss: 2.6457
+	 Val. Loss: 3.3571
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00, 10.47it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 30.33it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 142.58it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: ல
+Target text: சோதனை
+Match: False
+Epoch: 19 | Time: 0m 0s
+	Train Loss: 2.2600
+	 Val. Loss: 3.8961
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  9.71it/s]
+SOS token index: Not found
+EOS token index: 3
+SOS token index: Not found
+EOS token index: 3
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 39.57it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 168.73it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: ல
+Target text: சோதனை
+Match: False
+Epoch: 20 | Time: 0m 0s
+	Train Loss: 2.1118
+	 Val. Loss: 4.1272
+	 Val. Accuracy: 0.0000
+Training finished.
+Evaluating best model on test set...
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\training\train.py:265: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(model_save_path))
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 33.02it/s]
+SOS token index: Not found
+EOS token index: 3
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 141.90it/s]
+SOS token index: Not found
+EOS token index: 3
+Predicted text: ல
+Target text: நீண்டசொல்
+Match: False
+Test Loss: 2.9856 | Test Accuracy: 0.0000
+Saved predictions to predictions/vanilla/predictions-djr4vt3q.json

@@ -1,0 +1,16 @@
+{"time":"2025-05-19T23:03:02.9615226+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\DELL\\Documents\\SEMESTER 8\\Deep Learning\\Assignment_3\\DA6401-Assignment-3\\wandb\\run-20250519_230302-prmis2xy\\logs\\debug-core.log"}
+{"time":"2025-05-19T23:03:03.5483504+05:30","level":"INFO","msg":"created new stream","id":"prmis2xy"}
+{"time":"2025-05-19T23:03:03.5483504+05:30","level":"INFO","msg":"handler: started","stream_id":"prmis2xy"}
+{"time":"2025-05-19T23:03:03.5483504+05:30","level":"INFO","msg":"stream: started","id":"prmis2xy"}
+{"time":"2025-05-19T23:03:03.5483504+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"prmis2xy"}
+{"time":"2025-05-19T23:03:03.5483504+05:30","level":"INFO","msg":"sender: started","stream_id":"prmis2xy"}
+{"time":"2025-05-19T23:03:03.8617429+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T23:03:04.510724+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T23:03:04.510724+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T23:03:05.5237798+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-metadata.json","runtime_seconds":0.4520989,"progress":"1.2KB/1.2KB"},{"desc":"updating run config","runtime_seconds":0.3582912},{"desc":"uploading output.log","runtime_seconds":0.0181158,"progress":"1.6KB/1.6KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.0181158,"progress":"24B/24B"}],"total_operations":4}}
+{"time":"2025-05-19T23:03:06.3361464+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T23:03:06.8062755+05:30","level":"INFO","msg":"stream: closing","id":"prmis2xy"}
+{"time":"2025-05-19T23:03:06.8062755+05:30","level":"INFO","msg":"handler: closed","stream_id":"prmis2xy"}
+{"time":"2025-05-19T23:03:06.8062755+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"prmis2xy"}
+{"time":"2025-05-19T23:03:06.8062755+05:30","level":"INFO","msg":"sender: closed","stream_id":"prmis2xy"}
+{"time":"2025-05-19T23:03:06.8062755+05:30","level":"INFO","msg":"stream: closed","id":"prmis2xy"}

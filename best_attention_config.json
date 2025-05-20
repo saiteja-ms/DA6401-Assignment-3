@@ -1,0 +1,16 @@
+{
+    "language": "ta",
+    "embedding_size": 64,
+    "hidden_size": 256,
+    "num_layers": 2,
+    "cell_type": "lstm",
+    "dropout": 0.3,
+    "learning_rate": 0.00735,
+    "batch_size": 128,
+    "n_epochs": 5,
+    "clip": 1.0,
+    "teacher_forcing_ratio": 0.5,
+    "use_attention": true,
+    "max_seq_len": 50,
+    "optimizer": "adam"
+}

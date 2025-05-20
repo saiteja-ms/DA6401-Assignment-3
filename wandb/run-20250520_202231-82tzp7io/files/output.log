@@ -1,0 +1,106 @@
+Actual wandb run name: fancy-sweep-1
+Actual wandb run name: fancy-sweep-1
+Starting training run with config: {'batch_size': 32, 'cell_type': 'rnn', 'clip': 1, 'data_dir': '.', 'dropout': 0.2, 'embedding_size': 64, 'hidden_size': 128, 'language': 'ta', 'learning_rate': 0.0031671804569624053, 'max_seq_len': 50, 'momentum': 0.9, 'n_epochs': 10, 'num_layers': 2, 'optimizer': 'rmsprop', 'rmsprop_alpha': 0.99, 'scheduler': 'cosine', 'scheduler_factor': 0.5, 'scheduler_patience': 5, 'scheduler_t_max': 20, 'teacher_forcing_ratio': 0.5, 'use_attention': False, 'weight_decay': 0.001}
+Looking for training file at: .\ta\lexicons\ta.translit.sampled.train.tsv
+Special tokens in vocabulary:
+Source vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'a', 'b', 'c', 'd', 'e', 'f']
+Target vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'ஃ', 'அ', 'ஆ', 'இ', 'ஈ', 'உ']
+Successfully loaded Dakshina dataset for ta
+Train set: 68218 examples
+Dev set: 6827 examples
+Test set: 6864 examples
+Source vocabulary size: 30
+Target vocabulary size: 50
+Max sequence length: 50
+Using device: cuda
+The model has 127,282 trainable parameters
+Training: 100%|████████████████████████████████████| 2132/2132 [05:58<00:00,  5.94it/s]
+Evaluating Loss: 100%|███████████████████████████████| 214/214 [00:09<00:00, 22.01it/s]
+Calculating Accuracy: 100%|██████████████████████████| 214/214 [00:03<00:00, 53.51it/s]
+Epoch: 01 | Time: 6m 12s
+	Train Loss: 0.5438
+	 Val. Loss: 0.5365
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.003148
+Saved new best model to best-model-82tzp7io.pt
+Training: 100%|████████████████████████████████████| 2132/2132 [06:12<00:00,  5.72it/s]
+Evaluating Loss: 100%|███████████████████████████████| 214/214 [00:09<00:00, 21.72it/s]
+Calculating Accuracy: 100%|██████████████████████████| 214/214 [00:03<00:00, 53.75it/s]
+Epoch: 02 | Time: 6m 26s
+	Train Loss: 0.5445
+	 Val. Loss: 0.5438
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.003090
+Training: 100%|████████████████████████████████████| 2132/2132 [11:13<00:00,  3.17it/s]
+Evaluating Loss: 100%|███████████████████████████████| 214/214 [00:25<00:00,  8.41it/s]
+Calculating Accuracy: 100%|██████████████████████████| 214/214 [00:05<00:00, 37.38it/s]
+Epoch: 03 | Time: 11m 44s
+	Train Loss: 0.5415
+	 Val. Loss: 0.5394
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.002995
+Training: 100%|████████████████████████████████████| 2132/2132 [06:33<00:00,  5.42it/s]
+Evaluating Loss: 100%|███████████████████████████████| 214/214 [00:10<00:00, 21.21it/s]
+Calculating Accuracy: 100%|██████████████████████████| 214/214 [00:04<00:00, 52.45it/s]
+Epoch: 04 | Time: 6m 47s
+	Train Loss: 0.5338
+	 Val. Loss: 0.5446
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.002865
+Training: 100%|████████████████████████████████████| 2132/2132 [06:21<00:00,  5.59it/s]
+Evaluating Loss: 100%|███████████████████████████████| 214/214 [00:09<00:00, 21.65it/s]
+Calculating Accuracy: 100%|██████████████████████████| 214/214 [00:03<00:00, 56.68it/s]
+Epoch: 05 | Time: 6m 35s
+	Train Loss: 0.5327
+	 Val. Loss: 0.5526
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.002703
+Training: 100%|████████████████████████████████████| 2132/2132 [06:08<00:00,  5.78it/s]
+Evaluating Loss: 100%|███████████████████████████████| 214/214 [00:10<00:00, 21.25it/s]
+Calculating Accuracy: 100%|██████████████████████████| 214/214 [00:02<00:00, 72.96it/s]
+Epoch: 06 | Time: 6m 21s
+	Train Loss: 0.5340
+	 Val. Loss: 0.5378
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.002514
+Training: 100%|████████████████████████████████████| 2132/2132 [06:13<00:00,  5.72it/s]
+Evaluating Loss: 100%|███████████████████████████████| 214/214 [00:09<00:00, 21.60it/s]
+Calculating Accuracy: 100%|██████████████████████████| 214/214 [00:03<00:00, 54.07it/s]
+Epoch: 07 | Time: 6m 26s
+	Train Loss: 0.5315
+	 Val. Loss: 0.5439
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.002303
+Training: 100%|████████████████████████████████████| 2132/2132 [06:08<00:00,  5.78it/s]
+Evaluating Loss: 100%|███████████████████████████████| 214/214 [00:09<00:00, 22.18it/s]
+Calculating Accuracy: 100%|██████████████████████████| 214/214 [00:03<00:00, 54.67it/s]
+Epoch: 08 | Time: 6m 22s
+	Train Loss: 0.5294
+	 Val. Loss: 0.5432
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.002073
+Training: 100%|████████████████████████████████████| 2132/2132 [06:09<00:00,  5.77it/s]
+Evaluating Loss: 100%|███████████████████████████████| 214/214 [00:10<00:00, 20.94it/s]
+Calculating Accuracy: 100%|██████████████████████████| 214/214 [00:04<00:00, 51.18it/s]
+Epoch: 09 | Time: 6m 24s
+	Train Loss: 0.5260
+	 Val. Loss: 0.5368
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.001831
+Training: 100%|████████████████████████████████████| 2132/2132 [06:27<00:00,  5.50it/s]
+Evaluating Loss: 100%|███████████████████████████████| 214/214 [00:10<00:00, 19.51it/s]
+Calculating Accuracy: 100%|██████████████████████████| 214/214 [00:04<00:00, 44.22it/s]
+Epoch: 10 | Time: 6m 43s
+	Train Loss: 0.5257
+	 Val. Loss: 0.5460
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.001584
+Training finished.
+Evaluating best model on test set...
+C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\training\train.py:343: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(model_save_path, map_location=device))
+Evaluating Loss: 100%|███████████████████████████████| 215/215 [00:10<00:00, 19.70it/s]
+Calculating Accuracy: 100%|██████████████████████████| 215/215 [00:04<00:00, 47.17it/s]
+Test Loss: 0.5413
+Test Accuracy: 0.0000
+Saved predictions to predictions/vanilla/predictions-82tzp7io.json

@@ -1,0 +1,39 @@
+Starting training run with config: {'batch_size': 128, 'cell_type': 'lstm', 'clip': 1, 'data_dir': '.', 'decoder_layers': 2, 'dropout': 0.2, 'embedding_size': 64, 'encoder_layers': 1, 'hidden_size': 64, 'language': 'ta', 'learning_rate': 0.0001539303371304956, 'max_seq_len': 50, 'momentum': 0, 'n_epochs': 10, 'optimizer': 'rmsprop', 'rmsprop_alpha': 0.99, 'scheduler': 'none', 'scheduler_factor': 0.5, 'scheduler_patience': 5, 'scheduler_t_max': 20, 'teacher_forcing_ratio': 0.7, 'use_attention': False, 'weight_decay': 0.001}
+Looking for training file at: .\ta\lexicons\ta.translit.sampled.train.tsv
+Special tokens in vocabulary:
+Source vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'a', 'b', 'c', 'd', 'e', 'f']
+Target vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'ஃ', 'அ', 'ஆ', 'இ', 'ஈ', 'உ']
+Successfully loaded Dakshina dataset for ta
+Train set: 68218 examples
+Dev set: 6827 examples
+Test set: 6864 examples
+Source vocabulary size: 30
+Target vocabulary size: 50
+Max sequence length: 50
+Using device: cuda
+The model has 108,210 trainable parameters
+Training: 100%|██████████████████████████████████████| 533/533 [01:48<00:00,  4.90it/s]
+Evaluating Loss: 100%|█████████████████████████████████| 54/54 [00:02<00:00, 20.53it/s]
+Calculating Accuracy:   0%|                                     | 0/54 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\training\train.py", line 286, in train_model
+    valid_accuracy, _ = calculate_accuracy(
+  File "C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\training\evaluate.py", line 133, in calculate_accuracy
+    decoder_output, hidden, cell = model.decoder(
+  File "C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\models\decoder.py", line 51, in forward
+    output, (hidden, cell) = self.rnn(embedded, (hidden, cell))
+  File "C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\torch\nn\modules\rnn.py", line 1119, in forward
+    self.check_forward_args(input, hx, batch_sizes)
+  File "C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\torch\nn\modules\rnn.py", line 1001, in check_forward_args
+    self.check_hidden_size(
+  File "C:\Users\DELL\anaconda3\envs\Transliteration\lib\site-packages\torch\nn\modules\rnn.py", line 345, in check_hidden_size
+    raise RuntimeError(msg.format(expected_hidden_size, list(hx.size())))
+RuntimeError: Expected hidden[0] size (2, 128, 64), got [1, 128, 64]

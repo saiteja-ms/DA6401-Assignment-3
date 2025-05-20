@@ -1,0 +1,7 @@
+{"time":"2025-05-20T20:17:41.2080489+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\DELL\\Documents\\SEMESTER 8\\Deep Learning\\Assignment_3\\DA6401-Assignment-3\\wandb\\run-20250520_201741-obxy8ngs\\logs\\debug-core.log"}
+{"time":"2025-05-20T20:17:41.767051+05:30","level":"INFO","msg":"created new stream","id":"obxy8ngs"}
+{"time":"2025-05-20T20:17:41.767051+05:30","level":"INFO","msg":"stream: started","id":"obxy8ngs"}
+{"time":"2025-05-20T20:17:41.767051+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"obxy8ngs"}
+{"time":"2025-05-20T20:17:41.767051+05:30","level":"INFO","msg":"handler: started","stream_id":"obxy8ngs"}
+{"time":"2025-05-20T20:17:41.767051+05:30","level":"INFO","msg":"sender: started","stream_id":"obxy8ngs"}
+{"time":"2025-05-20T20:17:42.1601897+05:30","level":"INFO","msg":"Starting system monitor"}

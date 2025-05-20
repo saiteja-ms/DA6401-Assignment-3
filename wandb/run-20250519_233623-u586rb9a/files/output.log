@@ -1,0 +1,142 @@
+Starting training run with config: {'language': 'ta', 'embedding_size': 64, 'hidden_size': 128, 'encoder_layers': 1, 'decoder_layers': 1, 'cell_type': 'lstm', 'dropout': 0.2, 'learning_rate': 0.001, 'batch_size': 64, 'n_epochs': 20, 'clip': 1.0, 'teacher_forcing_ratio': 0.5, 'use_attention': False, 'data_dir': '.', 'max_seq_len': 50}
+Attempting to load data from: .\ta\lexicons\ta.translit.sampled.train.tsv
+Source vocabulary size: 30
+Target vocabulary size: 50
+Sample Source Vocab: [('<PAD>', 0), ('<UNK>', 1), ('<SOS>', 2), ('<EOS>', 3), ('a', 4), ('b', 5), ('c', 6), ('d', 7), ('e', 8), ('f', 9)]
+Sample Target Vocab: [('<PAD>', 0), ('<UNK>', 1), ('<SOS>', 2), ('<EOS>', 3), ('ஃ', 4), ('அ', 5), ('ஆ', 6), ('இ', 7), ('ஈ', 8), ('உ', 9)]
+Successfully loaded Dakshina dataset for ta
+Train set: 68218 examples
+Dev set: 6827 examples
+Test set: 6864 examples
+Max sequence length: 50
+Using device: cuda
+The model has 210,226 trainable parameters
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1066/1066 [02:37<00:00,  6.76it/s]
+Evaluating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 107/107 [00:04<00:00, 22.96it/s]
+Calculating Accuracy: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 107/107 [00:03<00:00, 33.70it/s]
+Epoch: 01 | Time: 2m 45s
+	Train Loss: 2.8342
+	 Val. Loss: 3.0485
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-u586rb9a.pt
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1066/1066 [02:54<00:00,  6.11it/s]
+Evaluating: 100%|█████████████| 107/107 [00:04<00:00, 21.96it/s]
+Calculating Accuracy: 100%|███| 107/107 [00:04<00:00, 25.91it/s]
+Epoch: 02 | Time: 3m 3s
+	Train Loss: 2.6506
+	 Val. Loss: 2.9610
+	 Val. Accuracy: 0.0004
+Saved new best model to best-model-u586rb9a.pt
+Training: 100%|█████████████| 1066/1066 [02:56<00:00,  6.03it/s]
+Evaluating: 100%|████████████████████████████████████| 107/107 [00:04<00:00, 22.31it/s]
+Calculating Accuracy: 100%|██████████████████████████| 107/107 [00:04<00:00, 24.63it/s]
+Epoch: 03 | Time: 3m 5s
+	Train Loss: 2.5241
+	 Val. Loss: 2.8978
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-u586rb9a.pt
+Training: 100%|████████████████████████████████████| 1066/1066 [02:52<00:00,  6.17it/s]
+Evaluating: 100%|████████████████████████████████████| 107/107 [00:04<00:00, 22.77it/s]
+Calculating Accuracy: 100%|██████████████████████████| 107/107 [00:04<00:00, 26.15it/s]
+Epoch: 04 | Time: 3m 1s
+	Train Loss: 2.4544
+	 Val. Loss: 2.8694
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-u586rb9a.pt
+Training: 100%|████████████████████████████████████| 1066/1066 [02:48<00:00,  6.33it/s]
+Evaluating: 100%|████████████████████████████████████| 107/107 [00:04<00:00, 22.81it/s]
+Calculating Accuracy: 100%|██████████████████████████| 107/107 [00:04<00:00, 21.99it/s]
+Epoch: 05 | Time: 2m 57s
+	Train Loss: 2.3567
+	 Val. Loss: 2.8411
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-u586rb9a.pt
+Training: 100%|████████████████████████████████████| 1066/1066 [02:45<00:00,  6.44it/s]
+Evaluating: 100%|████████████████████████████████████| 107/107 [00:04<00:00, 23.64it/s]
+Calculating Accuracy: 100%|██████████████████████████| 107/107 [00:04<00:00, 24.49it/s]
+Epoch: 06 | Time: 2m 54s
+	Train Loss: 2.2761
+	 Val. Loss: 2.6905
+	 Val. Accuracy: 0.0003
+Saved new best model to best-model-u586rb9a.pt
+Training: 100%|████████████████████████████████████| 1066/1066 [02:48<00:00,  6.32it/s]
+Evaluating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 107/107 [00:04<00:00, 24.15it/s]
+Calculating Accuracy: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 107/107 [00:04<00:00, 25.12it/s]
+Epoch: 07 | Time: 2m 57s
+	Train Loss: 2.2213
+	 Val. Loss: 2.6690
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-u586rb9a.pt
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1066/1066 [02:52<00:00,  6.17it/s]
+Evaluating: 100%|████████████████████████████████████| 107/107 [00:04<00:00, 21.47it/s]
+Calculating Accuracy: 100%|██████████████████████████| 107/107 [00:04<00:00, 22.77it/s]
+Epoch: 08 | Time: 3m 2s
+	Train Loss: 2.1396
+	 Val. Loss: 2.5923
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-u586rb9a.pt
+Training: 100%|████████████████████████████████████| 1066/1066 [02:43<00:00,  6.50it/s]
+Evaluating: 100%|████████████████████████████████████| 107/107 [00:04<00:00, 24.40it/s]
+Calculating Accuracy: 100%|██████████████████████████| 107/107 [00:04<00:00, 24.97it/s]
+Epoch: 09 | Time: 2m 52s
+	Train Loss: 2.0575
+	 Val. Loss: 2.5082
+	 Val. Accuracy: 0.0012
+Saved new best model to best-model-u586rb9a.pt
+Training: 100%|████████████████████████████████████| 1066/1066 [02:50<00:00,  6.26it/s]
+Evaluating: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 107/107 [00:04<00:00, 22.18it/s]
+Calculating Accuracy: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 107/107 [00:04<00:00, 23.18it/s]
+Epoch: 10 | Time: 2m 59s
+	Train Loss: 1.9931
+	 Val. Loss: 2.4589
+	 Val. Accuracy: 0.0010
+Saved new best model to best-model-u586rb9a.pt
+Training: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1066/1066 [02:47<00:00,  6.37it/s]
+Evaluating: 100%|████████████████████████████████████| 107/107 [00:04<00:00, 22.89it/s]
+Calculating Accuracy: 100%|██████████████████████████| 107/107 [00:04<00:00, 23.55it/s]
+Epoch: 11 | Time: 2m 56s
+	Train Loss: 1.9312
+	 Val. Loss: 2.4170
+	 Val. Accuracy: 0.0035
+Saved new best model to best-model-u586rb9a.pt
+Training: 100%|████████████████████████████████████| 1066/1066 [02:56<00:00,  6.03it/s]
+Evaluating: 100%|████████████████████████████████████| 107/107 [00:04<00:00, 21.76it/s]
+Calculating Accuracy: 100%|██████████████████████████| 107/107 [00:04<00:00, 22.20it/s]
+Epoch: 12 | Time: 3m 6s
+	Train Loss: 1.8670
+	 Val. Loss: 2.3235
+	 Val. Accuracy: 0.0031
+Saved new best model to best-model-u586rb9a.pt
+Training: 100%|████████████████████████████████████| 1066/1066 [02:51<00:00,  6.22it/s]
+Evaluating: 100%|████████████████████████████████████| 107/107 [00:04<00:00, 22.85it/s]
+Calculating Accuracy: 100%|██████████████████████████| 107/107 [00:04<00:00, 24.45it/s]
+Epoch: 13 | Time: 3m 0s
+	Train Loss: 1.7942
+	 Val. Loss: 2.2965
+	 Val. Accuracy: 0.0070
+Saved new best model to best-model-u586rb9a.pt
+Training: 100%|████████████████████████████████████| 1066/1066 [02:56<00:00,  6.03it/s]
+Evaluating: 100%|████████████████████████████████████| 107/107 [00:05<00:00, 18.90it/s]
+Calculating Accuracy: 100%|██████████████████████████| 107/107 [00:05<00:00, 18.74it/s]
+Epoch: 14 | Time: 3m 8s
+	Train Loss: 1.7394
+	 Val. Loss: 2.2496
+	 Val. Accuracy: 0.0064
+Saved new best model to best-model-u586rb9a.pt
+Training: 100%|████████████████████████████████████| 1066/1066 [03:08<00:00,  5.65it/s]
+Evaluating: 100%|████████████████████████████████████| 107/107 [00:05<00:00, 18.91it/s]
+Calculating Accuracy: 100%|██████████████████████████| 107/107 [00:05<00:00, 18.02it/s]
+Epoch: 15 | Time: 3m 20s
+	Train Loss: 1.6934
+	 Val. Loss: 2.2051
+	 Val. Accuracy: 0.0107
+Saved new best model to best-model-u586rb9a.pt
+Training: 100%|████████████████████████████████████| 1066/1066 [03:10<00:00,  5.60it/s]
+Evaluating: 100%|████████████████████████████████████| 107/107 [00:04<00:00, 23.49it/s]
+Calculating Accuracy: 100%|██████████████████████████| 107/107 [00:04<00:00, 25.92it/s]
+Epoch: 16 | Time: 3m 18s
+	Train Loss: 1.6418
+	 Val. Loss: 2.1735
+	 Val. Accuracy: 0.0144
+Saved new best model to best-model-u586rb9a.pt
+Training:  68%|█████████████████████████            | 723/1066 [01:48<00:57,  5.95it/s]

@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Attention Heatmaps (3×3 Grid)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 15px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .heatmap-container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .heatmap-title {
+            text-align: center;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 12px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        .heatmap-canvas {
+            width: 250px;
+            height: 250px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .legend {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .legend-gradient {
+            width: 300px;
+            height: 20px;
+            margin: 10px auto;
+            background: linear-gradient(to right, #440154, #414487, #2a788e, #22a884, #7ad151, #fde725);
+        }
+        .legend-labels {
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+            margin: 0 auto;
+        }
+    </style>
+    <script>
+        // Function to draw a heatmap on a canvas
+        function drawHeatmap(canvasId, source, target, weights, isCorrect) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext('2d');
+            
+            // Clear canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Increase padding to make room for labels
+            const paddingLeft = 40;   // More space for y-axis labels
+            const paddingTop = 30;    // Space for title
+            const paddingRight = 10;  // Right margin
+            const paddingBottom = 40; // More space for x-axis labels
+            
+            // Calculate cell size
+            const availWidth = canvas.width - (paddingLeft + paddingRight);
+            const availHeight = canvas.height - (paddingTop + paddingBottom);
+            const cellWidth = availWidth / source.length;
+            const cellHeight = availHeight / target.length;
+            
+            // Draw heatmap cells first (so labels appear on top)
+            for (let i = 0; i < target.length; i++) {
+                for (let j = 0; j < source.length; j++) {
+                    const weight = weights[i][j];
+                    ctx.fillStyle = viridisColor(weight);
+                    ctx.fillRect(
+                        paddingLeft + j * cellWidth, 
+                        paddingTop + i * cellHeight, 
+                        cellWidth, 
+                        cellHeight
+                    );
+                    
+                    // Add cell border
+                    ctx.strokeStyle = '#cccccc';
+                    ctx.lineWidth = 0.5;
+                    ctx.strokeRect(
+                        paddingLeft + j * cellWidth, 
+                        paddingTop + i * cellHeight, 
+                        cellWidth, 
+                        cellHeight
+                    );
+                }
+            }
+            
+            // Draw source labels (x-axis) - BELOW the heatmap
+            ctx.font = '12px Arial';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            
+            for (let j = 0; j < source.length; j++) {
+                // Position for bottom labels (source) - moved down further
+                const labelY = paddingTop + availHeight + 20; // Positioned well below the heatmap
+                
+                // Add a white background behind the label
+                const textWidth = ctx.measureText(source[j]).width;
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+                ctx.fillRect(
+                    paddingLeft + j * cellWidth + cellWidth/2 - textWidth/2 - 2,
+                    labelY - 6, 
+                    textWidth + 4, 
+                    12
+                );
+                
+                // Draw the text
+                ctx.fillStyle = '#000000';
+                ctx.fillText(source[j], paddingLeft + j * cellWidth + cellWidth/2, labelY);
+            }
+            
+            // Draw target labels (y-axis)
+            ctx.textAlign = 'right';
+            for (let i = 0; i < target.length; i++) {
+                // Add a white background behind the label
+                const textWidth = ctx.measureText(target[i]).width;
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+                ctx.fillRect(
+                    paddingLeft - textWidth - 6,
+                    paddingTop + i * cellHeight + cellHeight/2 - 6, 
+                    textWidth + 4, 
+                    12
+                );
+                
+                // Draw the text
+                ctx.fillStyle = '#000000';
+                ctx.fillText(target[i], paddingLeft - 5, paddingTop + i * cellHeight + cellHeight/2);
+            }
+            
+            // Add axis labels - positioned to avoid overlap
+            ctx.textAlign = 'center';
+            ctx.fillStyle = '#000000';
+            ctx.font = '10px Arial';
+            
+            // X-axis label (at the very bottom)
+            ctx.fillText("Source (English)", paddingLeft + availWidth/2, canvas.height - 5);
+            
+            // Y-axis label (rotated and positioned at the far left)
+            ctx.save();
+            ctx.translate(10, paddingTop + availHeight/2);
+            ctx.rotate(-Math.PI/2);
+            ctx.fillText("Target (Tamil)", 0, 0);
+            ctx.restore();
+        }
+        
+        // Function to generate a color from the viridis colormap
+        function viridisColor(value) {
+            // Simplified viridis colormap
+            const colors = [
+                [68, 1, 84],    // Dark purple (0.0)
+                [65, 68, 135],   // Purple (0.2)
+                [42, 120, 142],  // Blue (0.4)
+                [34, 168, 132],  // Teal (0.6)
+                [122, 209, 81],  // Green (0.8)
+                [253, 231, 37]   // Yellow (1.0)
+            ];
+            
+            // Find the two colors to interpolate between
+            const idx = Math.min(Math.floor(value * 5), 4);
+            const t = (value * 5) - idx;
+            
+            // Linear interpolation between the two colors
+            const r = Math.round(colors[idx][0] * (1 - t) + colors[idx + 1][0] * t);
+            const g = Math.round(colors[idx][1] * (1 - t) + colors[idx + 1][1] * t);
+            const b = Math.round(colors[idx][2] * (1 - t) + colors[idx + 1][2] * t);
+            
+            return `rgb(${r}, ${g}, ${b})`;
+        }
+        
+        // Function to initialize all heatmaps when the page loads
+        window.onload = function() {
+    
+            // Data for heatmap 1
+            const source1 = ["i", "d", "h", "a", "n", "a", "a", "l"];
+            const target1 = ["\u0b87", "\u0ba4", "\u0ba9", "\u0bbe", "\u0bb2", "\u0bcd"];
+            const weights1 = [[0.19891558587551117, 0.5896310210227966, 0.05577115714550018, 0.008398227393627167, 0.006344437599182129, 0.007204941939562559, 0.0011858887737616897, 0.0013479815097525716], [0.0013659439282491803, 0.08666864782571793, 0.8136516213417053, 0.03750107064843178, 0.042574599385261536, 0.0026104438584297895, 0.002662831684574485, 0.0010543626267462969], [2.6233332391711883e-05, 0.0060782842338085175, 0.017892898991703987, 0.0025618942454457283, 0.7948570251464844, 0.021963519975543022, 0.11999161541461945, 0.015114866197109222], [6.42128725303337e-05, 0.0021264972165226936, 0.005580645985901356, 0.0009254025062546134, 0.034003712236881256, 0.01764582470059395, 0.6968667507171631, 0.18142744898796082], [1.2482360034482554e-06, 9.495065023656934e-05, 0.00028179778018966317, 7.206351710919989e-07, 0.0041351355612277985, 0.000646350730676204, 0.03770224377512932, 0.4933558702468872], [2.292519241109403e-07, 2.5120956706814468e-05, 6.969497189857066e-05, 2.687687583602383e-07, 0.0004388387897051871, 0.00019687047461047769, 0.00845408532768488, 0.021340884268283844]];
+            drawHeatmap('heatmap-canvas-1', source1, target1, weights1, true);
+        
+            // Data for heatmap 2
+            const source2 = ["e", "d", "h", "i", "r", "k", "k", "a"];
+            const target2 = ["\u0b8e", "\u0ba4", "\u0bbf", "\u0bb0", "\u0bcd", "\u0b95", "\u0bcd", "\u0b95"];
+            const weights2 = [[0.07701791077852249, 0.5919944047927856, 0.08325628191232681, 0.005049568135291338, 0.005692785140126944, 0.004998726770281792, 0.0018192214192822576, 0.0003394200175534934], [0.00023181631695479155, 0.14097747206687927, 0.612761378288269, 0.17372769117355347, 0.032054297626018524, 0.0022581906523555517, 0.00027358386432752013, 1.9155952031724155e-05], [4.291013283364009e-06, 0.0011859897058457136, 0.0057174572721123695, 0.3172765374183655, 0.6045337915420532, 0.0479222908616066, 0.004384834319353104, 0.0008672269759699702], [3.107364318566397e-05, 0.0013551232405006886, 0.0034915758296847343, 0.013530525378882885, 0.6332830786705017, 0.3083909749984741, 0.01930070109665394, 0.0016188984736800194], [8.181523867278884e-07, 0.00019776317640207708, 0.00032234465470537543, 0.0009737455402500927, 0.01084722951054573, 0.7348981499671936, 0.10173652321100235, 0.0036709336563944817], [1.635612170503009e-05, 6.731151370331645e-05, 4.6576526074204594e-05, 5.434152262751013e-05, 0.0027361377142369747, 0.3424317240715027, 0.5919703841209412, 0.030161261558532715], [1.5089823136804625e-05, 5.26244766660966e-05, 0.0002688142703846097, 6.707410648232326e-05, 0.0008028955780901015, 0.07001631706953049, 0.4778590500354767, 0.022717295214533806], [0.00012247628183104098, 0.0002461148251313716, 0.0011907188454642892, 0.00012295377382542938, 0.001841648481786251, 0.09911525994539261, 0.528497040271759, 0.2480689436197281]];
+            drawHeatmap('heatmap-canvas-2', source2, target2, weights2, true);
+        
+            // Data for heatmap 3
+            const source3 = ["s", "a", "n", "g", "a", "i"];
+            const target3 = ["\u0b9a", "\u0b99", "\u0bcd", "\u0b95", "\u0bc8"];
+            const weights3 = [[0.1704941987991333, 0.507135272026062, 0.008259651251137257, 0.016415830701589584, 0.014185842126607895, 0.006144341547042131], [0.013976186513900757, 0.07860004156827927, 0.23212547600269318, 0.4497891962528229, 0.05854974314570427, 0.00555680925026536], [0.001390207908116281, 0.0008650060626678169, 0.052570004016160965, 0.3116525113582611, 0.2014806866645813, 0.19809801876544952], [0.0015687221894040704, 0.008837592788040638, 0.006118364632129669, 0.14304222166538239, 0.35505199432373047, 0.16345565021038055], [0.002018566709011793, 0.0002207018551416695, 0.0024597356095910072, 0.0031553914304822683, 0.05369829013943672, 0.5391717553138733]];
+            drawHeatmap('heatmap-canvas-3', source3, target3, weights3, true);
+        
+            // Data for heatmap 4
+            const source4 = ["u", "u", "p", "p", "s", "a", "l", "a"];
+            const target4 = ["\u0b8a", "\u0baa", "\u0bcd", "\u0b9a", "\u0bb2", "\u0bbe"];
+            const weights4 = [[0.15527373552322388, 0.434866726398468, 0.07887749373912811, 0.022829344496130943, 0.03921235352754593, 0.010817985981702805, 0.002670740708708763, 0.0024278718046844006], [0.0027531220111995935, 0.030697090551257133, 0.5380963087081909, 0.16234084963798523, 0.20024940371513367, 0.0061760032549500465, 0.0004087653651367873, 0.00011022438411600888], [1.2716982382698916e-05, 0.0013790050288662314, 0.04013906419277191, 0.4167782664299011, 0.45970386266708374, 0.012826085090637207, 0.03909476473927498, 0.0028339498676359653], [7.070526044117287e-05, 0.0011761263012886047, 0.001901252311654389, 0.06285157799720764, 0.2327144891023636, 0.6029388904571533, 0.021950427442789078, 0.025383125990629196], [2.1292362362146378e-06, 0.0009628670522943139, 0.002526586875319481, 0.004934678785502911, 0.015715450048446655, 0.005878509022295475, 0.6687957644462585, 0.0928301215171814], [7.760830271763552e-07, 5.3015701269032434e-05, 0.0011255413992330432, 0.0010055744787678123, 0.003239990910515189, 0.0027434867806732655, 0.18973101675510406, 0.1067255437374115]];
+            drawHeatmap('heatmap-canvas-4', source4, target4, weights4, false);
+        
+            // Data for heatmap 5
+            const source5 = ["n", "a", "v", "a", "s", "a", "k", "t", "h", "i"];
+            const target5 = ["\u0ba8", "\u0bb5", "\u0b9a", "\u0b95", "\u0bcd", "\u0ba4", "\u0bbf"];
+            const weights5 = [[0.19365642964839935, 0.654586672782898, 0.001432260381989181, 0.034241218119859695, 0.002912896918132901, 0.005288753658533096, 0.0029679134022444487, 0.0025982563383877277, 0.0023186260368674994, 0.0011131172068417072], [0.0003031959349755198, 0.006662389729171991, 0.4780596196651459, 0.3524479568004608, 0.10714565217494965, 0.005742254201322794, 0.0041769095696508884, 0.00025615800404921174, 0.00024370354367420077, 0.00015362263366114348], [0.00031628229771740735, 6.691945600323379e-05, 0.03823444992303848, 0.018189486116170883, 0.7259883880615234, 0.04062311351299286, 0.16150955855846405, 0.003979746252298355, 0.0034557580947875977, 0.0004732670495286584], [0.0010624848073348403, 9.980220784200355e-05, 0.001328868791460991, 0.0022423111367970705, 0.027672888711094856, 0.06100616231560707, 0.36988434195518494, 0.275224894285202, 0.22668592631816864, 0.0063254679553210735], [0.00118502217810601, 4.8624147893860936e-05, 0.0002093822113238275, 0.00010047236719401553, 0.00275554065592587, 0.008069910109043121, 0.022339992225170135, 0.49232757091522217, 0.39416754245758057, 0.02070806547999382], [0.0014097035164013505, 4.2297691834392026e-05, 5.88544353377074e-05, 3.18721795338206e-05, 0.00035271470551379025, 0.003701288253068924, 0.0081169493496418, 0.4126987159252167, 0.29628273844718933, 0.15629924833774567], [0.0003246197593398392, 2.27014561460237e-06, 2.769627144516562e-06, 5.353697815735359e-06, 4.978580545866862e-05, 0.0015993345296010375, 0.0028224994894117117, 0.02054259367287159, 0.01115806121379137, 0.4266723096370697]];
+            drawHeatmap('heatmap-canvas-5', source5, target5, weights5, true);
+        
+            // Data for heatmap 6
+            const source6 = ["e", "i", "n"];
+            const target6 = ["\u0b90", "\u0ba9", "\u0bcd"];
+            const weights6 = [[0.1271868795156479, 0.3133139908313751, 0.24846424162387848], [0.004385284148156643, 0.06847796589136124, 0.20007529854774475], [1.0286627912137192e-05, 0.0036338067147880793, 0.11819552630186081]];
+            drawHeatmap('heatmap-canvas-6', source6, target6, weights6, false);
+        
+            // Data for heatmap 7
+            const source7 = ["v", "i", "l", "l", "a", "i", "k", "a", "l"];
+            const target7 = ["\u0bb5", "\u0bbf", "\u0bb2", "\u0bcd", "\u0bb2", "\u0bc8", "\u0b95", "\u0bb3", "\u0bcd"];
+            const weights7 = [[0.2353094220161438, 0.4283164143562317, 0.011506390757858753, 0.0479973740875721, 0.01656293123960495, 0.005748460069298744, 0.006451583467423916, 0.0013401965843513608, 0.0012824174482375383], [0.015502364374697208, 0.5599889755249023, 0.09642593562602997, 0.11064285039901733, 0.00573689816519618, 0.009152974933385849, 0.007267232518643141, 0.00030626755324192345, 0.0002994211681652814], [0.013537831604480743, 0.008439148776233196, 0.25933584570884705, 0.5530930757522583, 0.07211310416460037, 0.04916181042790413, 0.017756391316652298, 0.0002760808856692165, 0.0009954663692042232], [0.015389937907457352, 0.004269573371857405, 0.008664901368319988, 0.34569501876831055, 0.013761023059487343, 0.49375832080841064, 0.0716622993350029, 0.0032535085920244455, 0.005416371859610081], [0.005798862315714359, 0.0001345404889434576, 0.0055220159702003, 0.2427300363779068, 0.4874877333641052, 0.062078557908535004, 0.11726962774991989, 0.030845245346426964, 0.010035132057964802], [0.0026092876214534044, 0.00016776770644355565, 0.0009561317856423557, 0.0055808424949646, 0.014213827438652515, 0.45157086849212646, 0.2981313169002533, 0.018703119829297066, 0.14765651524066925], [0.0033526290208101273, 4.406717835081508e-06, 0.000621071900241077, 0.0010100854560732841, 0.0067423563450574875, 0.0073772151954472065, 0.1201486811041832, 0.32066428661346436, 0.09763175994157791], [0.0006657903431914747, 6.200990810611984e-06, 1.8615086446516216e-05, 4.493872620514594e-05, 6.794305954826996e-05, 0.0017137282993644476, 0.00146271544508636, 0.012629908509552479, 0.6712923049926758], [0.0007391715189442039, 1.8515447663958184e-06, 1.3178450899431482e-05, 9.027170017361641e-05, 0.00041206349851563573, 0.001019691932015121, 0.002721754601225257, 0.05482395738363266, 0.1793004274368286]];
+            drawHeatmap('heatmap-canvas-7', source7, target7, weights7, true);
+        
+            // Data for heatmap 8
+            const source8 = ["i", "r", "u", "m", "b", "u", "b"];
+            const target8 = ["\u0b87", "\u0bb0", "\u0bc1", "\u0bae", "\u0bcd", "\u0baa", "\u0bc1", "\u0baa", "\u0bcd"];
+            const weights8 = [[0.06882046908140182, 0.5874130725860596, 0.3050419092178345, 0.01691535860300064, 0.004659089259803295, 0.0010311165824532509, 0.0018540690653026104], [0.0005190923693589866, 0.049201600253582, 0.599181592464447, 0.3305547535419464, 0.01607634872198105, 0.00015005467867013067, 0.0007917637121863663], [1.4143687621981371e-05, 0.001706584938801825, 0.032840292900800705, 0.8712514638900757, 0.07314369827508926, 0.001873066066764295, 0.009302458725869656], [5.967116976535181e-06, 0.001098491484299302, 0.007500007748603821, 0.3128490746021271, 0.6556788086891174, 0.0037634263280779123, 0.015538094565272331], [1.8052102177534834e-06, 0.0005336714093573391, 0.0007312162779271603, 0.03470428287982941, 0.5263988971710205, 0.03202228248119354, 0.33503568172454834], [2.8820907118642936e-06, 3.788438698393293e-05, 0.0002173125685658306, 0.008794794790446758, 0.24842679500579834, 0.409996896982193, 0.19262810051441193], [9.649949106460554e-07, 0.00031546837999485433, 0.000726353086065501, 0.0006052093813195825, 0.011052459478378296, 0.014020348899066448, 0.842268168926239], [3.742714937970959e-08, 1.3036526979703922e-05, 3.163412839057855e-05, 7.024365186225623e-05, 0.0028057601302862167, 0.017680011689662933, 0.17645001411437988], [1.5842981326841254e-07, 2.4739547370700166e-06, 3.1649847187509295e-06, 2.0895215129712597e-05, 0.002038781763985753, 0.010566720739006996, 0.035869043320417404]];
+            drawHeatmap('heatmap-canvas-8', source8, target8, weights8, true);
+        
+            // Data for heatmap 9
+            const source9 = ["b", "a", "l", "a", "t", "h", "t", "h", "a"];
+            const target9 = ["\u0baa", "\u0bb2", "\u0ba4", "\u0bcd", "\u0ba4"];
+            const weights9 = [[0.4297662377357483, 0.39140963554382324, 0.0032051841262727976, 0.019116822630167007, 0.0027340406086295843, 0.006603705231100321, 0.0017861564410850406, 0.002986825304105878, 0.0005276757874526083], [0.007931455038487911, 0.08017487078905106, 0.44090378284454346, 0.21430712938308716, 0.08274008333683014, 0.015417302027344704, 0.003946717828512192, 0.0008538355468772352, 0.00023207275080494583], [0.0018985862843692303, 0.001580469193868339, 0.16178765892982483, 0.023500319570302963, 0.5354797840118408, 0.11227884888648987, 0.020035911351442337, 0.006552156060934067, 0.0010080373613163829], [0.00268119596876204, 0.0005927865277044475, 0.017989106476306915, 0.009256422519683838, 0.08110827207565308, 0.053668275475502014, 0.31488046050071716, 0.3914574682712555, 0.019856277853250504], [0.005124775227159262, 0.0011967943282797933, 0.0006463330355472863, 0.0011814611498266459, 0.008224893361330032, 0.04264164716005325, 0.15434497594833374, 0.45414987206459045, 0.10284712165594101]];
+            drawHeatmap('heatmap-canvas-9', source9, target9, weights9, true);
+        
+        };
+    </script>
+</head>
+<body>
+    <h1>Attention Heatmaps (3×3 Grid)</h1>
+    
+    <div class="grid-container">
+    
+        <div class="heatmap-container">
+            <div class="heatmap-title correct">
+                ✓ idhanaal → இதனால்
+            </div>
+            <div class="heatmap-canvas">
+                <canvas id="heatmap-canvas-1" width="250" height="250"></canvas>
+            </div>
+        </div>
+        
+        <div class="heatmap-container">
+            <div class="heatmap-title correct">
+                ✓ edhirkka → எதிர்க்க
+            </div>
+            <div class="heatmap-canvas">
+                <canvas id="heatmap-canvas-2" width="250" height="250"></canvas>
+            </div>
+        </div>
+        
+        <div class="heatmap-container">
+            <div class="heatmap-title correct">
+                ✓ sangai → சங்கை
+            </div>
+            <div class="heatmap-canvas">
+                <canvas id="heatmap-canvas-3" width="250" height="250"></canvas>
+            </div>
+        </div>
+        
+        <div class="heatmap-container">
+            <div class="heatmap-title incorrect">
+                ✗ uuppsala → ஊப்சலா
+            </div>
+            <div class="heatmap-canvas">
+                <canvas id="heatmap-canvas-4" width="250" height="250"></canvas>
+            </div>
+        </div>
+        
+        <div class="heatmap-container">
+            <div class="heatmap-title correct">
+                ✓ navasakthi → நவசக்தி
+            </div>
+            <div class="heatmap-canvas">
+                <canvas id="heatmap-canvas-5" width="250" height="250"></canvas>
+            </div>
+        </div>
+        
+        <div class="heatmap-container">
+            <div class="heatmap-title incorrect">
+                ✗ ein → ஐன்
+            </div>
+            <div class="heatmap-canvas">
+                <canvas id="heatmap-canvas-6" width="250" height="250"></canvas>
+            </div>
+        </div>
+        
+        <div class="heatmap-container">
+            <div class="heatmap-title correct">
+                ✓ villaikal → வில்லைகள்
+            </div>
+            <div class="heatmap-canvas">
+                <canvas id="heatmap-canvas-7" width="250" height="250"></canvas>
+            </div>
+        </div>
+        
+        <div class="heatmap-container">
+            <div class="heatmap-title correct">
+                ✓ irumbub → இரும்புப்
+            </div>
+            <div class="heatmap-canvas">
+                <canvas id="heatmap-canvas-8" width="250" height="250"></canvas>
+            </div>
+        </div>
+        
+        <div class="heatmap-container">
+            <div class="heatmap-title correct">
+                ✓ balaththa → பலத்த
+            </div>
+            <div class="heatmap-canvas">
+                <canvas id="heatmap-canvas-9" width="250" height="250"></canvas>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="legend">
+        <p>Attention Weight</p>
+        <div class="legend-gradient"></div>
+        <div class="legend-labels">
+            <span>0.0</span>
+            <span>0.2</span>
+            <span>0.4</span>
+            <span>0.6</span>
+            <span>0.8</span>
+            <span>1.0</span>
+        </div>
+    </div>
+</body>
+</html>
+    

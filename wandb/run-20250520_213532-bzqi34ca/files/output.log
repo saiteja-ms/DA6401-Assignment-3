@@ -1,0 +1,75 @@
+Actual wandb run name: vague-sweep-9
+Starting training run with config: {'batch_size': 64, 'cell_type': 'lstm', 'clip': 1, 'data_dir': '.', 'decoder_layers': 3, 'dropout': 0.3, 'embedding_size': 128, 'encoder_layers': 3, 'hidden_size': 256, 'language': 'ta', 'learning_rate': 0.0002790122558721056, 'max_seq_len': 50, 'momentum': 0, 'n_epochs': 10, 'optimizer': 'rmsprop', 'rmsprop_alpha': 0.99, 'scheduler': 'cosine', 'scheduler_factor': 0.5, 'scheduler_patience': 5, 'scheduler_t_max': 20, 'teacher_forcing_ratio': 0.5, 'use_attention': False, 'weight_decay': 0.001}
+Looking for training file at: .\ta\lexicons\ta.translit.sampled.train.tsv
+Special tokens in vocabulary:
+Source vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'a', 'b', 'c', 'd', 'e', 'f']
+Target vocab keys: ['<PAD>', '<UNK>', '<SOS>', '<EOS>', 'ஃ', 'அ', 'ஆ', 'இ', 'ஈ', 'உ']
+Successfully loaded Dakshina dataset for ta
+Train set: 68218 examples
+Dev set: 6827 examples
+Test set: 6864 examples
+Source vocabulary size: 30
+Target vocabulary size: 50
+Max sequence length: 50
+Using device: cuda
+The model has 2,918,962 trainable parameters
+Training: 100%|████████████████████████████████████| 1066/1066 [06:42<00:00,  2.65it/s]
+Evaluating Loss: 100%|███████████████████████████████| 107/107 [00:24<00:00,  4.37it/s]
+Calculating Accuracy: 100%|██████████████████████████| 107/107 [00:12<00:00,  8.83it/s]
+Epoch: 01 | Time: 7m 19s
+	Train Loss: 0.5702
+	 Val. Loss: 0.5273
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.000277
+Saved new best model to best-model-bzqi34ca.pt
+Training: 100%|████████████████████████████████████| 1066/1066 [09:21<00:00,  1.90it/s]
+Evaluating Loss: 100%|███████████████████████████████| 107/107 [00:08<00:00, 12.21it/s]
+Calculating Accuracy: 100%|██████████████████████████| 107/107 [00:05<00:00, 18.53it/s]
+Epoch: 02 | Time: 9m 35s
+	Train Loss: 0.5575
+	 Val. Loss: 0.5256
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.000272
+Saved new best model to best-model-bzqi34ca.pt
+Training: 100%|████████████████████████████████████| 1066/1066 [05:45<00:00,  3.09it/s]
+Evaluating Loss: 100%|███████████████████████████████| 107/107 [00:09<00:00, 11.82it/s]
+Calculating Accuracy: 100%|██████████████████████████| 107/107 [00:07<00:00, 15.22it/s]
+Epoch: 03 | Time: 6m 1s
+	Train Loss: 0.5569
+	 Val. Loss: 0.5260
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.000264
+Training: 100%|████████████████████████████████████| 1066/1066 [05:39<00:00,  3.14it/s]
+Evaluating Loss: 100%|███████████████████████████████| 107/107 [00:08<00:00, 12.22it/s]
+Calculating Accuracy: 100%|██████████████████████████| 107/107 [00:05<00:00, 18.66it/s]
+Epoch: 04 | Time: 5m 54s
+	Train Loss: 0.5568
+	 Val. Loss: 0.5253
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.000252
+Saved new best model to best-model-bzqi34ca.pt
+Training: 100%|████████████████████████████████████| 1066/1066 [05:30<00:00,  3.23it/s]
+Evaluating Loss: 100%|███████████████████████████████| 107/107 [00:08<00:00, 12.57it/s]
+Calculating Accuracy: 100%|██████████████████████████| 107/107 [00:04<00:00, 21.56it/s]
+Epoch: 05 | Time: 5m 43s
+	Train Loss: 0.5566
+	 Val. Loss: 0.5264
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.000238
+Training: 100%|████████████████████████████████████| 1066/1066 [05:35<00:00,  3.18it/s]
+Evaluating Loss: 100%|███████████████████████████████| 107/107 [00:08<00:00, 12.44it/s]
+Calculating Accuracy: 100%|██████████████████████████| 107/107 [00:06<00:00, 17.41it/s]
+Epoch: 06 | Time: 5m 50s
+	Train Loss: 0.5564
+	 Val. Loss: 0.5253
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.000222
+Training: 100%|████████████████████████████████████| 1066/1066 [05:37<00:00,  3.16it/s]
+Evaluating Loss: 100%|███████████████████████████████| 107/107 [00:08<00:00, 12.57it/s]
+Calculating Accuracy: 100%|██████████████████████████| 107/107 [00:06<00:00, 16.32it/s]
+Epoch: 07 | Time: 5m 52s
+	Train Loss: 0.5562
+	 Val. Loss: 0.5257
+	 Val. Accuracy: 0.0000
+	 Learning Rate: 0.000203
+Training:  68%|█████████████████████████            | 721/1066 [03:44<01:53,  3.03it/s]

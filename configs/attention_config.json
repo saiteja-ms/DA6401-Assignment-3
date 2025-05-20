@@ -11,5 +11,9 @@
     "n_epochs": 20,
     "clip": 1.0,
     "teacher_forcing_ratio": 0.5,
-    "use_attention": true
+    "use_attention": true,
+    "max_seq_len": 50,
+    "optimizer": "adam",
+    "weight_decay": 0.0,
+    "scheduler": "none"
 }

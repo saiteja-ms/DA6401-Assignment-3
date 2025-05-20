@@ -1,0 +1,16 @@
+{"time":"2025-05-19T23:03:18.1080353+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\DELL\\Documents\\SEMESTER 8\\Deep Learning\\Assignment_3\\DA6401-Assignment-3\\wandb\\run-20250519_230318-vicafxjm\\logs\\debug-core.log"}
+{"time":"2025-05-19T23:03:18.748961+05:30","level":"INFO","msg":"created new stream","id":"vicafxjm"}
+{"time":"2025-05-19T23:03:18.7494838+05:30","level":"INFO","msg":"handler: started","stream_id":"vicafxjm"}
+{"time":"2025-05-19T23:03:18.7494838+05:30","level":"INFO","msg":"sender: started","stream_id":"vicafxjm"}
+{"time":"2025-05-19T23:03:18.7494838+05:30","level":"INFO","msg":"stream: started","id":"vicafxjm"}
+{"time":"2025-05-19T23:03:18.7494838+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"vicafxjm"}
+{"time":"2025-05-19T23:03:19.1163436+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T23:03:24.2063936+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T23:03:24.2063936+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T23:03:25.2138515+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.2024256,"progress":"918B/918B"}],"total_operations":1}}
+{"time":"2025-05-19T23:03:25.4264682+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T23:03:26.0894+05:30","level":"INFO","msg":"stream: closing","id":"vicafxjm"}
+{"time":"2025-05-19T23:03:26.0894+05:30","level":"INFO","msg":"handler: closed","stream_id":"vicafxjm"}
+{"time":"2025-05-19T23:03:26.0894+05:30","level":"INFO","msg":"sender: closed","stream_id":"vicafxjm"}
+{"time":"2025-05-19T23:03:26.0894+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"vicafxjm"}
+{"time":"2025-05-19T23:03:26.0894+05:30","level":"INFO","msg":"stream: closed","id":"vicafxjm"}

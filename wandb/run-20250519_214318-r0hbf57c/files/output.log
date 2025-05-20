@@ -1,0 +1,20 @@
+Starting training run with config: {'batch_size': 64, 'cell_type': 'gru', 'clip': 1, 'data_dir': '../dakshina_dataset_v1.0', 'decoder_layers': 2, 'dropout': 0, 'embedding_size': 64, 'encoder_layers': 1, 'hidden_size': 256, 'language': 'ta', 'learning_rate': 0.0005, 'max_seq_len': 50, 'n_epochs': 15, 'teacher_forcing_ratio': 0.5, 'use_attention': False}
+Attempting to load data from: ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.train.tsv, ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.dev.tsv, ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.test.tsv
+Error: Training file not found at ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.train.tsv
+Current working directory: C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3
+Falling back to creating a small test dataset for debugging.
+Creating a minimal test dataset for debugging...
+Created minimal test dataset with:
+Train set: 2 examples
+Dev set: 1 examples
+Test set: 1 examples
+Source vocabulary size: 15
+Target vocabulary size: 20
+Max sequence length: 50
+Using device: cuda
+Traceback (most recent call last):
+  File "C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\training\train.py", line 175, in train_model
+    model = Seq2Seq(encoder, decoder, device).to(device) # Move overall model to device
+  File "C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\src\models\seq2seq.py", line 22, in __init__
+    assert encoder.num_layers == decoder.num_layers, \
+AssertionError: Number of layers in encoder and decoder must be equal

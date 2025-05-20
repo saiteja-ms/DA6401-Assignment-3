@@ -1,0 +1,54 @@
+_wandb:
+    value:
+        cli_version: 0.19.11
+        m: []
+        python_version: 3.9.21
+        t:
+            "1":
+                - 1
+                - 55
+            "2":
+                - 1
+                - 55
+            "3":
+                - 2
+                - 14
+                - 23
+                - 55
+            "4": 3.9.21
+            "5": 0.19.11
+            "8":
+                - 3
+                - 5
+            "12": 0.19.11
+            "13": windows-amd64
+batch_size:
+    value: 64
+cell_type:
+    value: gru
+clip:
+    value: 1
+data_dir:
+    value: ../dakshina_dataset_v1.0
+decoder_layers:
+    value: 2
+dropout:
+    value: 0.2
+embedding_size:
+    value: 32
+encoder_layers:
+    value: 1
+hidden_size:
+    value: 256
+language:
+    value: ta
+learning_rate:
+    value: 0.001
+max_seq_len:
+    value: 50
+n_epochs:
+    value: 15
+teacher_forcing_ratio:
+    value: 0.5
+use_attention:
+    value: false

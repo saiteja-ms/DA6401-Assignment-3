@@ -1,15 +1,19 @@
 {
     "language": "ta",
     "embedding_size": 64,
-    "hidden_size": 128,
-    "encoder_layers": 1,
-    "decoder_layers": 1,
+    "hidden_size": 256,
+    "encoder_layers": 3,
+    "decoder_layers": 3,
     "cell_type": "lstm",
     "dropout": 0.2,
     "learning_rate": 0.001,
-    "batch_size": 64,
+    "batch_size": 128,
     "n_epochs": 20,
     "clip": 1.0,
     "teacher_forcing_ratio": 0.5,
-    "use_attention": false
+    "use_attention": false,
+    "max_seq_len": 50,
+    "optimizer": "rmsprop",
+    "weight_decay": 0.0,
+    "scheduler": "plateau"
 }

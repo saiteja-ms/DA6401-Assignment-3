@@ -1,0 +1,16 @@
+# Ignore model files
+*.pt
+*.pth
+*.ckpt
+models/
+checkpoints/
+saved_models/
+
+# Ignore dataset files
+*.tsv
+*.csv
+*.jsonl
+*.zip
+*.tar.gz
+data/
+datasets/

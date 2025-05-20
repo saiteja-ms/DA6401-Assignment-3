@@ -1,0 +1,136 @@
+Starting training run with config: {'batch_size': 64, 'cell_type': 'lstm', 'clip': 1, 'data_dir': '../dakshina_dataset_v1.0', 'decoder_layers': 1, 'dropout': 0.3, 'embedding_size': 128, 'encoder_layers': 1, 'hidden_size': 256, 'language': 'ta', 'learning_rate': 0.0005, 'max_seq_len': 50, 'n_epochs': 15, 'teacher_forcing_ratio': 0.5, 'use_attention': False}
+Attempting to load data from: ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.train.tsv, ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.dev.tsv, ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.test.tsv
+Error: Training file not found at ../dakshina_dataset_v1.0\ta\lexicons\ta.translit.sampled.train.tsv
+Current working directory: C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3
+Falling back to creating a small test dataset for debugging.
+Creating a minimal test dataset for debugging...
+Created minimal test dataset with:
+Train set: 2 examples
+Dev set: 1 examples
+Test set: 1 examples
+Source vocabulary size: 15
+Target vocabulary size: 20
+Max sequence length: 50
+Using device: cuda
+The model has 800,148 trainable parameters
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  4.47it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 18.17it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 121.72it/s]
+Epoch: 01 | Time: 0m 0s
+	Train Loss: 2.9957
+	 Val. Loss: 2.9957
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-x1t5dqe6.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.44it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 20.08it/s]
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 85.44it/s]
+Epoch: 02 | Time: 0m 0s
+	Train Loss: 2.9948
+	 Val. Loss: 2.9956
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-x1t5dqe6.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.42it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 19.48it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 105.46it/s]
+Epoch: 03 | Time: 0m 0s
+	Train Loss: 2.9936
+	 Val. Loss: 2.9956
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-x1t5dqe6.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.21it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 20.54it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 118.00it/s]
+Epoch: 04 | Time: 0m 0s
+	Train Loss: 2.9923
+	 Val. Loss: 2.9955
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-x1t5dqe6.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.56it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 20.22it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 122.77it/s]
+Epoch: 05 | Time: 0m 0s
+	Train Loss: 2.9906
+	 Val. Loss: 2.9955
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-x1t5dqe6.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.33it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 20.89it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 110.81it/s]
+Epoch: 06 | Time: 0m 0s
+	Train Loss: 2.9887
+	 Val. Loss: 2.9954
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-x1t5dqe6.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.50it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 19.86it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 130.52it/s]
+Epoch: 07 | Time: 0m 0s
+	Train Loss: 2.9866
+	 Val. Loss: 2.9953
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-x1t5dqe6.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.41it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 20.01it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 131.32it/s]
+Epoch: 08 | Time: 0m 0s
+	Train Loss: 2.9860
+	 Val. Loss: 2.9953
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-x1t5dqe6.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.68it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 20.99it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 126.51it/s]
+Epoch: 09 | Time: 0m 0s
+	Train Loss: 2.9829
+	 Val. Loss: 2.9952
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-x1t5dqe6.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.74it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 19.51it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 133.03it/s]
+Epoch: 10 | Time: 0m 0s
+	Train Loss: 2.9795
+	 Val. Loss: 2.9952
+	 Val. Accuracy: 0.0000
+Saved new best model to best-model-x1t5dqe6.pt
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.70it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 19.43it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 133.03it/s]
+Epoch: 11 | Time: 0m 0s
+	Train Loss: 2.9707
+	 Val. Loss: 2.9953
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.37it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 20.55it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 119.46it/s]
+Epoch: 12 | Time: 0m 0s
+	Train Loss: 2.9682
+	 Val. Loss: 2.9954
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.39it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 20.66it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 119.76it/s]
+Epoch: 13 | Time: 0m 0s
+	Train Loss: 2.9608
+	 Val. Loss: 2.9957
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.51it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 21.34it/s]
+Calculating Accuracy: 100%|██████████████████████████████| 1/1 [00:00<00:00, 90.74it/s]
+Epoch: 14 | Time: 0m 0s
+	Train Loss: 2.9415
+	 Val. Loss: 2.9963
+	 Val. Accuracy: 0.0000
+Training: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  5.43it/s]
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 20.16it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 124.57it/s]
+Epoch: 15 | Time: 0m 0s
+	Train Loss: 2.9242
+	 Val. Loss: 2.9981
+	 Val. Accuracy: 0.0000
+Training finished.
+Evaluating best model on test set...
+Evaluating: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 19.05it/s]
+Calculating Accuracy: 100%|█████████████████████████████| 1/1 [00:00<00:00, 105.41it/s]
+Test Loss: 2.9937 | Test Accuracy: 0.0000
+Saved predictions to predictions/vanilla/predictions-x1t5dqe6.json

@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Vanilla Model Predictions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .prediction-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .prediction-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .correct {
+            border-left: 5px solid #4CAF50;
+        }
+        .incorrect {
+            border-left: 5px solid #F44336;
+        }
+        .status-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+        }
+        .correct-badge {
+            background-color: #4CAF50;
+        }
+        .incorrect-badge {
+            background-color: #F44336;
+        }
+        .source {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .target-container {
+            display: flex;
+            margin-bottom: 10px;
+            gap: 10px;
+        }
+        .label {
+            font-weight: bold;
+            width: 100px;
+            color: #666;
+            flex-shrink: 0;
+        }
+        .target, .prediction {
+            flex-grow: 1;
+            font-size: 16px;
+            word-break: break-word;
+            padding-left: 5px;
+        }
+        .prediction-container {
+            display: flex;
+            margin-bottom: 5px;
+        }
+        .attestation {
+            font-size: 12px;
+            color: #666;
+            text-align: right;
+            margin-top: 10px;
+        }
+        .highlight {
+            background-color: #FFECB3;
+            padding: 2px;
+            border-radius: 3px;
+        }
+        .error {
+            color: #F44336;
+            text-decoration: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: #F44336;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vanilla Model Predictions</h1>
+    
+    <div class="grid-container">
+    
+        <div class="prediction-card correct">
+            <div class="status-badge correct-badge">
+                ✓ Correct
+            </div>
+            <div class="source">praem</div>
+            <div class="target-container">
+                <div class="label">Target:</div>
+                <div class="target">பிரேம்</div>
+            </div>
+            <div class="prediction-container">
+                <div class="label">Prediction:</div>
+                <div class="prediction"><span class="highlight">பிரேம்</span></div>
+            </div>
+            <div class="attestation">Attestation: 1.0</div>
+        </div>
+        
+        <div class="prediction-card incorrect">
+            <div class="status-badge incorrect-badge">
+                ✗ Incorrect
+            </div>
+            <div class="source">chankankalai</div>
+            <div class="target-container">
+                <div class="label">Target:</div>
+                <div class="target">சங்கங்களை</div>
+            </div>
+            <div class="prediction-container">
+                <div class="label">Prediction:</div>
+                <div class="prediction">சங்க<span class='error'>ள</span><span class='error'>ை</span>க<span class='error'>்</span><span class='error'>க</span></div>
+            </div>
+            <div class="attestation">Attestation: 1.0</div>
+        </div>
+        
+        <div class="prediction-card incorrect">
+            <div class="status-badge incorrect-badge">
+                ✗ Incorrect
+            </div>
+            <div class="source">africaavai</div>
+            <div class="target-container">
+                <div class="label">Target:</div>
+                <div class="target">ஆப்பிரிக்காவை</div>
+            </div>
+            <div class="prediction-container">
+                <div class="label">Prediction:</div>
+                <div class="prediction"><span class='error'>அ</span>ப்<span class='error'>ர</span><span class='error'>ீ</span><span class='error'>வ</span><span class='error'>ர</span><span class='error'>ச</span><span class='error'>ி</span></div>
+            </div>
+            <div class="attestation">Attestation: 1.0</div>
+        </div>
+        
+        <div class="prediction-card incorrect">
+            <div class="status-badge incorrect-badge">
+                ✗ Incorrect
+            </div>
+            <div class="source">aappirikkavilum</div>
+            <div class="target-container">
+                <div class="label">Target:</div>
+                <div class="target">ஆப்பிரிக்காவிலும்</div>
+            </div>
+            <div class="prediction-container">
+                <div class="label">Prediction:</div>
+                <div class="prediction">ஆப்பிரிக்க<span class='error'>ு</span><span class='error'>ள</span><span class='error'>்</span><span class='error'>ள</span>ு</div>
+            </div>
+            <div class="attestation">Attestation: 1.0</div>
+        </div>
+        
+        <div class="prediction-card correct">
+            <div class="status-badge correct-badge">
+                ✓ Correct
+            </div>
+            <div class="source">kirupai</div>
+            <div class="target-container">
+                <div class="label">Target:</div>
+                <div class="target">கிருபை</div>
+            </div>
+            <div class="prediction-container">
+                <div class="label">Prediction:</div>
+                <div class="prediction"><span class="highlight">கிருபை</span></div>
+            </div>
+            <div class="attestation">Attestation: 1.0</div>
+        </div>
+        
+        <div class="prediction-card incorrect">
+            <div class="status-badge incorrect-badge">
+                ✗ Incorrect
+            </div>
+            <div class="source">aasiramaththil</div>
+            <div class="target-container">
+                <div class="label">Target:</div>
+                <div class="target">ஆசிரமத்தில்</div>
+            </div>
+            <div class="prediction-container">
+                <div class="label">Prediction:</div>
+                <div class="prediction">ஆசிரம<span class='error'>ி</span><span class='error'>த</span><span class='error'>்</span><span class='error'>த</span>ல்</div>
+            </div>
+            <div class="attestation">Attestation: 3.0</div>
+        </div>
+        
+        <div class="prediction-card correct">
+            <div class="status-badge correct-badge">
+                ✓ Correct
+            </div>
+            <div class="source">yoori</div>
+            <div class="target-container">
+                <div class="label">Target:</div>
+                <div class="target">யூரி</div>
+            </div>
+            <div class="prediction-container">
+                <div class="label">Prediction:</div>
+                <div class="prediction"><span class="highlight">யூரி</span></div>
+            </div>
+            <div class="attestation">Attestation: 2.0</div>
+        </div>
+        
+        <div class="prediction-card correct">
+            <div class="status-badge correct-badge">
+                ✓ Correct
+            </div>
+            <div class="source">aayvukkaana</div>
+            <div class="target-container">
+                <div class="label">Target:</div>
+                <div class="target">ஆய்வுக்கான</div>
+            </div>
+            <div class="prediction-container">
+                <div class="label">Prediction:</div>
+                <div class="prediction"><span class="highlight">ஆய்வுக்கான</span></div>
+            </div>
+            <div class="attestation">Attestation: 2.0</div>
+        </div>
+        
+        <div class="prediction-card incorrect">
+            <div class="status-badge incorrect-badge">
+                ✗ Incorrect
+            </div>
+            <div class="source">kadarkaraiyilirunthu</div>
+            <div class="target-container">
+                <div class="label">Target:</div>
+                <div class="target">கடற்கரையிலிருந்து</div>
+            </div>
+            <div class="prediction-container">
+                <div class="label">Prediction:</div>
+                <div class="prediction">கடற்க<span class='error'>ை</span><span class='error'>ய</span><span class='error'>ி</span><span class='error'>ல</span><span class='error'>ு</span><span class='error'>ர</span><span class='error'>ு</span><span class='error'>ந</span><span class='error'>்</span><span class='error'>த</span><span class='error'>ா</span><span class='error'>ர</span><span class='error'>்</span></div>
+            </div>
+            <div class="attestation">Attestation: 1.0</div>
+        </div>
+        
+        <div class="prediction-card incorrect">
+            <div class="status-badge incorrect-badge">
+                ✗ Incorrect
+            </div>
+            <div class="source">mupparimaana</div>
+            <div class="target-container">
+                <div class="label">Target:</div>
+                <div class="target">முப்பரிமாண</div>
+            </div>
+            <div class="prediction-container">
+                <div class="label">Prediction:</div>
+                <div class="prediction">முப்பர<span class='error'>ம</span><span class='error'>ா</span><span class='error'>ன</span><span class='error'>ி</span></div>
+            </div>
+            <div class="attestation">Attestation: 3.0</div>
+        </div>
+        
+        <div class="prediction-card correct">
+            <div class="status-badge correct-badge">
+                ✓ Correct
+            </div>
+            <div class="source">paeek</div>
+            <div class="target-container">
+                <div class="label">Target:</div>
+                <div class="target">பேக்</div>
+            </div>
+            <div class="prediction-container">
+                <div class="label">Prediction:</div>
+                <div class="prediction"><span class="highlight">பேக்</span></div>
+            </div>
+            <div class="attestation">Attestation: 1.0</div>
+        </div>
+        
+        <div class="prediction-card correct">
+            <div class="status-badge correct-badge">
+                ✓ Correct
+            </div>
+            <div class="source">arakku</div>
+            <div class="target-container">
+                <div class="label">Target:</div>
+                <div class="target">அரக்கு</div>
+            </div>
+            <div class="prediction-container">
+                <div class="label">Prediction:</div>
+                <div class="prediction"><span class="highlight">அரக்கு</span></div>
+            </div>
+            <div class="attestation">Attestation: 3.0</div>
+        </div>
+        
+    </div>
+</body>
+</html>
+    

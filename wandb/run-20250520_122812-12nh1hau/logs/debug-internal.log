@@ -1,0 +1,16 @@
+{"time":"2025-05-20T12:28:12.3607215+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\DELL\\Documents\\SEMESTER 8\\Deep Learning\\Assignment_3\\DA6401-Assignment-3\\wandb\\run-20250520_122812-12nh1hau\\logs\\debug-core.log"}
+{"time":"2025-05-20T12:28:13.076812+05:30","level":"INFO","msg":"created new stream","id":"12nh1hau"}
+{"time":"2025-05-20T12:28:13.076812+05:30","level":"INFO","msg":"handler: started","stream_id":"12nh1hau"}
+{"time":"2025-05-20T12:28:13.076812+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"12nh1hau"}
+{"time":"2025-05-20T12:28:13.076812+05:30","level":"INFO","msg":"sender: started","stream_id":"12nh1hau"}
+{"time":"2025-05-20T12:28:13.0774089+05:30","level":"INFO","msg":"stream: started","id":"12nh1hau"}
+{"time":"2025-05-20T12:28:13.4337401+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-20T13:45:48.0106558+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-20T13:45:48.0106558+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-20T13:45:49.0466004+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.4261679,"progress":"33.7KB/33.7KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.4261679,"progress":"392B/392B"},{"desc":"uploading config.yaml","runtime_seconds":0.1464465,"progress":"977B/977B"}],"total_operations":3}}
+{"time":"2025-05-20T13:45:49.4634669+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-20T13:45:49.8765885+05:30","level":"INFO","msg":"stream: closing","id":"12nh1hau"}
+{"time":"2025-05-20T13:45:49.8765885+05:30","level":"INFO","msg":"handler: closed","stream_id":"12nh1hau"}
+{"time":"2025-05-20T13:45:49.8765885+05:30","level":"INFO","msg":"sender: closed","stream_id":"12nh1hau"}
+{"time":"2025-05-20T13:45:49.8765885+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"12nh1hau"}
+{"time":"2025-05-20T13:45:49.8771311+05:30","level":"INFO","msg":"stream: closed","id":"12nh1hau"}

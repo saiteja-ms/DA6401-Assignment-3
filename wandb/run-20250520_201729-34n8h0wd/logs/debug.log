@@ -1,0 +1,29 @@
+2025-05-20 20:17:29,689 INFO    Thread-9  :29148 [wandb_setup.py:_flush():70] Current SDK version is 0.19.11
+2025-05-20 20:17:29,689 INFO    Thread-9  :29148 [wandb_setup.py:_flush():70] Configure stats pid to 29148
+2025-05-20 20:17:29,689 INFO    Thread-9  :29148 [wandb_setup.py:_flush():70] Loading settings from C:\Users\DELL\.config\wandb\settings
+2025-05-20 20:17:29,689 INFO    Thread-9  :29148 [wandb_setup.py:_flush():70] Loading settings from C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\wandb\settings
+2025-05-20 20:17:29,689 INFO    Thread-9  :29148 [wandb_setup.py:_flush():70] Loading settings from environment variables
+2025-05-20 20:17:29,689 INFO    Thread-9  :29148 [wandb_init.py:setup_run_log_directory():724] Logging user logs to C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\wandb\run-20250520_201729-34n8h0wd\logs\debug.log
+2025-05-20 20:17:29,691 INFO    Thread-9  :29148 [wandb_init.py:setup_run_log_directory():725] Logging internal logs to C:\Users\DELL\Documents\SEMESTER 8\Deep Learning\Assignment_3\DA6401-Assignment-3\wandb\run-20250520_201729-34n8h0wd\logs\debug-internal.log
+2025-05-20 20:17:29,691 INFO    Thread-9  :29148 [wandb_init.py:init():852] calling init triggers
+2025-05-20 20:17:29,691 INFO    Thread-9  :29148 [wandb_init.py:init():857] wandb.init called with sweep_config: {'batch_size': 64, 'cell_type': 'rnn', 'clip': 1, 'data_dir': '.', 'decoder_layers': 3, 'dropout': 0.3, 'embedding_size': 32, 'encoder_layers': 2, 'hidden_size': 128, 'language': 'ta', 'learning_rate': 0.004797797648147891, 'max_seq_len': 50, 'momentum': 0.9, 'n_epochs': 10, 'optimizer': 'sgd', 'rmsprop_alpha': 0.99, 'scheduler': 'none', 'scheduler_factor': 0.5, 'scheduler_patience': 5, 'scheduler_t_max': 20, 'teacher_forcing_ratio': 0.7, 'use_attention': True, 'weight_decay': 0.0001}
+config: {'_wandb': {}}
+2025-05-20 20:17:29,691 INFO    Thread-9  :29148 [wandb_init.py:init():893] starting backend
+2025-05-20 20:17:29,691 INFO    Thread-9  :29148 [wandb_init.py:init():897] sending inform_init request
+2025-05-20 20:17:29,728 INFO    Thread-9  :29148 [wandb_init.py:init():907] backend started and connected
+2025-05-20 20:17:29,730 INFO    Thread-9  :29148 [wandb_run.py:_config_callback():1436] config_cb None None {'batch_size': 64, 'cell_type': 'rnn', 'clip': 1, 'data_dir': '.', 'decoder_layers': 3, 'dropout': 0.3, 'embedding_size': 32, 'encoder_layers': 2, 'hidden_size': 128, 'language': 'ta', 'learning_rate': 0.004797797648147891, 'max_seq_len': 50, 'momentum': 0.9, 'n_epochs': 10, 'optimizer': 'sgd', 'rmsprop_alpha': 0.99, 'scheduler': 'none', 'scheduler_factor': 0.5, 'scheduler_patience': 5, 'scheduler_t_max': 20, 'teacher_forcing_ratio': 0.7, 'use_attention': True, 'weight_decay': 0.0001}
+2025-05-20 20:17:29,730 INFO    Thread-9  :29148 [wandb_init.py:init():1005] updated telemetry
+2025-05-20 20:17:30,063 INFO    Thread-9  :29148 [wandb_init.py:init():1029] communicating run to backend with 90.0 second timeout
+2025-05-20 20:17:30,814 INFO    Thread-9  :29148 [wandb_init.py:init():1104] starting run threads in backend
+2025-05-20 20:17:31,207 INFO    Thread-9  :29148 [wandb_run.py:_console_start():2573] atexit reg
+2025-05-20 20:17:31,207 INFO    Thread-9  :29148 [wandb_run.py:_redirect():2421] redirect: wrap_raw
+2025-05-20 20:17:31,207 INFO    Thread-9  :29148 [wandb_run.py:_redirect():2490] Wrapping output streams.
+2025-05-20 20:17:31,207 INFO    Thread-9  :29148 [wandb_run.py:_redirect():2513] Redirects installed.
+2025-05-20 20:17:31,211 INFO    Thread-9  :29148 [wandb_init.py:init():1150] run started, returning control to user process
+2025-05-20 20:17:34,409 INFO    Thread-9  :29148 [wandb_run.py:_finish():2321] finishing run teja_sai-indian-institute-of-technology-madras/transliteration-seq2seq/34n8h0wd
+2025-05-20 20:17:34,410 INFO    Thread-9  :29148 [wandb_run.py:_atexit_cleanup():2538] got exitcode: 1
+2025-05-20 20:17:34,410 INFO    Thread-9  :29148 [wandb_run.py:_restore():2520] restore
+2025-05-20 20:17:34,410 INFO    Thread-9  :29148 [wandb_run.py:_restore():2526] restore done
+2025-05-20 20:17:36,029 INFO    Thread-9  :29148 [wandb_run.py:_footer_history_summary_info():4188] rendering history
+2025-05-20 20:17:36,029 INFO    Thread-9  :29148 [wandb_run.py:_footer_history_summary_info():4220] rendering summary
+2025-05-20 20:17:36,029 INFO    Thread-9  :29148 [wandb_run.py:_footer_sync_info():4149] logging synced files
