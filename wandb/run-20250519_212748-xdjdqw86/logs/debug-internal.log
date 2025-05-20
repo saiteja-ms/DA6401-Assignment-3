@@ -1,1 +1,21 @@
 {"time":"2025-05-19T21:27:48.9406274+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"C:\\Users\\DELL\\Documents\\SEMESTER 8\\Deep Learning\\Assignment_3\\DA6401-Assignment-3\\wandb\\run-20250519_212748-xdjdqw86\\logs\\debug-core.log"}
+{"time":"2025-05-19T21:27:49.456503+05:30","level":"INFO","msg":"created new stream","id":"xdjdqw86"}
+{"time":"2025-05-19T21:27:49.456503+05:30","level":"INFO","msg":"stream: started","id":"xdjdqw86"}
+{"time":"2025-05-19T21:27:49.456503+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"xdjdqw86"}
+{"time":"2025-05-19T21:27:49.456503+05:30","level":"INFO","msg":"handler: started","stream_id":"xdjdqw86"}
+{"time":"2025-05-19T21:27:49.4570554+05:30","level":"INFO","msg":"sender: started","stream_id":"xdjdqw86"}
+{"time":"2025-05-19T21:27:49.874003+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T22:54:00.5180901+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/DA6401-Assignment-3/xdjdqw86/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-19T22:54:03.4762474+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/DA6401-Assignment-3/xdjdqw86/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-19T22:54:07.5101775+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/DA6401-Assignment-3/xdjdqw86/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-19T22:54:17.1197243+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/DA6401-Assignment-3/xdjdqw86/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-19T22:54:27.3591525+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp [2409:40f4:4107:739f:55fc:a4e3:3d50:114e]:60129->[64:ff9b::23ba:e431]:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-05-19T22:54:29.7948227+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-19T22:54:34.194818+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-19T22:54:34.6374786+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/DA6401-Assignment-3/xdjdqw86/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-19T22:54:43.7584556+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-19T22:55:02.4652812+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-19T22:55:10.1920764+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/DA6401-Assignment-3/xdjdqw86/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-19T22:55:37.8133028+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-19T22:56:10.1998768+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/teja_sai-indian-institute-of-technology-madras/DA6401-Assignment-3/xdjdqw86/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-05-19T22:56:37.820353+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
