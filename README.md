@@ -122,6 +122,9 @@ To evaluate a trained model:
 
 ```bash
 python main.py --mode analyze --vanilla_run_id YOUR_VANILLA_RUN_ID --attention_run_id YOUR_ATTENTION_RUN_ID --language ta --data_dir "."
+
+(or)
+python main.py --mode analyze --vanilla_predictions vanilla_best_predictions.json --attention_predictions attention_best_predictions.json --language ta --data_dir "."
 ```
 
 
@@ -130,13 +133,13 @@ python main.py --mode analyze --vanilla_run_id YOUR_VANILLA_RUN_ID --attention_r
 To generate attention heatmaps:
 
 ```bash
-python visualization.py --predictions_file predictions/attention/predictions-YOUR_RUN_ID.json --visualization_type heatmap
+python visualization.py --predictions_file attention_best_predictions.json --visualization_type heatmap
 ```
 
 To generate connectivity visualizations:
 
 ```bash
-python connectivity_visualization.py --predictions_file predictions/attention/predictions-attention_best_predictions.json
+python connectivity_visualization.py --predictions_file attention_best_predictions.json
 ```
 
 You can also run the "Transliteration_Assignment.ipynb" which also implements the training and hyperparameter sweeps for the vanilla and attention based models.
