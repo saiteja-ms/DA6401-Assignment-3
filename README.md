@@ -40,6 +40,7 @@ This repo implements and compares two sequence-to-sequence architectures for Tam
 We perform hyperparameter tuning for both models, analyze their performance, and visualize the attention mechanism to understand how the model learns to map between romanized and native Tamil script.
 
 ## Dataset
+The Dakshina dataset is a collection of text in both Latin (romanized) and native scripts for 12 South Asian languages, including Tamil. For Tamil transliteration, the dataset includes native script Wikipedia text, a romanization lexicon with attested romanizations, and full sentence parallel data in both Tamil script and Latin alphabet. The "attestation" value in the dataset represents the number of times a particular romanization was elicited from native speaker annotators for a given Tamil word, providing insight into how commonly or consistently a specific romanization is used.
 
 We have used the standard train, dev, test set from the folder dakshina_dataset_v1.0/ta/lexicons.
 
